@@ -1,0 +1,64 @@
+version: "3.8"
+
+x-airflow-common: &airflow-common
+  image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/anidata-airflow:latest
+  environment:
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__FERNET_KEY: ""
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+  volumes:
+    - ./data:/opt/airflow/data
+  depends_on:
+    - postgres
+  networks:
+    - anidata-network
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    networks:
+      - anidata-network
+
+  airflow-init:
+    <<: *airflow-common
+    command: db init
+    restart: "no"
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    restart: unless-stopped
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    ports:
+      - "9200:9200"
+    networks:
+      - anidata-network
+
+  mock-site:
+    image: nginx:alpine
+    volumes:
+      - ./mock-site/site:/usr/share/nginx/html:ro
+    networks:
+      - anidata-network
+
+networks:
+  anidata-network:
+    driver: bridge
