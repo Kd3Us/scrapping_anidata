@@ -101,14 +101,16 @@ def get_latest_run(repo: str, token: str) -> tuple:
             "Authorization": f"Bearer {token}",
             "Accept": "application/vnd.github+json",
         },
-        params={"branch": "master", "per_page": 1},
+        params={"per_page": 10},
         timeout=15,
     )
     response.raise_for_status()
     runs = response.json().get("workflow_runs", [])
-    if not runs:
+    master_runs = [r for r in runs if r.get("head_branch") == "master"]
+    if not master_runs:
         return "none", ""
-    return runs[0].get("conclusion") or "none", runs[0].get("head_sha", "")
+    run = master_runs[0]
+    return run.get("conclusion") or "none", run.get("head_sha", "")
 
 
 def main() -> None:
