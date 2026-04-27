@@ -258,3 +258,72 @@ class TestScrapeToFile:
         data = json.loads(Path(filepath).read_text(encoding="utf-8"))
         assert data["stats"]["animes_count"] == 1
         assert data["animes"][0]["title_en"] == "Test"
+
+
+# ============== TESTS NOMMÉS REQUIS ==============
+
+def test_parse_score_na():
+    card = BeautifulSoup(
+        '<div><span class="score" data-score="N/A">N/A</span></div>',
+        "html.parser",
+    ).div
+    assert AniDexScraper._parse_score(card) is None
+
+
+def test_parse_score_valid():
+    card = BeautifulSoup(
+        '<div><span class="score" data-score="8.5">8.5</span></div>',
+        "html.parser",
+    ).div
+    assert AniDexScraper._parse_score(card) == 8.5
+
+
+def test_parse_studio_empty():
+    card = BeautifulSoup(
+        '<div><span class="studio studio-unknown"></span></div>',
+        "html.parser",
+    ).div
+    assert AniDexScraper._parse_studio(card) is None
+
+
+def test_parse_catalog_card():
+    scraper_instance = AniDexScraper(base_url="http://mock-site", delay=0)
+    card = BeautifulSoup(fixtures.CARD_NORMAL, "html.parser").select_one(".anime-card")
+    anime = scraper_instance.parse_catalog_card(card)
+    assert isinstance(anime, Anime)
+    assert anime.id == 1
+    assert anime.title_en == "Attack on Titan"
+    assert anime.score == 9.0
+    assert anime.studio == "Wit Studio"
+
+
+def test_scrape_to_file(tmp_path, monkeypatch):
+    import requests as req_module
+
+    def fake_get(self, url, timeout=None):
+        class Resp:
+            status_code = 200
+
+            def raise_for_status(self):
+                pass
+
+        r = Resp()
+        if "/news/" in url:
+            r.content = fixtures.NEWS_PAGE.encode("utf-8")
+        else:
+            r.content = fixtures.CATALOG_PAGE.encode("utf-8")
+        return r
+
+    monkeypatch.setattr(req_module.Session, "get", fake_get)
+    monkeypatch.setattr("time.sleep", lambda _: None)
+
+    filepath = scrape_to_file(output_dir=tmp_path, base_url="http://mock-site", enrich=False)
+
+    p = Path(filepath)
+    assert p.exists()
+    assert p.name.startswith("anime_")
+    assert p.name.endswith(".json")
+    data = json.loads(p.read_text(encoding="utf-8"))
+    assert "animes" in data
+    assert "scraped_at" in data
+    assert "stats" in data
