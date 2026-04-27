@@ -13,8 +13,10 @@ $GithubRepository = $envVars['GITHUB_REPOSITORY']
 $RepoUrl          = "https://github.com/$GithubRepository"
 $TokenPageUrl     = "$RepoUrl/settings/actions/runners/new?runnerOs=win"
 
-[System.Environment]::SetEnvironmentVariable("ANIDATA_PROJECT_DIR", $ProjectDir, "User")
-Write-Host "Variable ANIDATA_PROJECT_DIR definie : $ProjectDir"
+$pathFile = Join-Path $RunnerDir "project_path.txt"
+New-Item -ItemType Directory -Force -Path $RunnerDir | Out-Null
+Set-Content -Path $pathFile -Value $ProjectDir -Encoding UTF8
+Write-Host "Chemin projet sauvegarde : $pathFile"
 
 Write-Host ""
 Write-Host "Ouvre ce lien dans ton navigateur :"

@@ -101,5 +101,7 @@ jobs:
         env:
           COMMIT_SHA: ${{ github.sha }}
         run: |
-          $script = Join-Path $env:ANIDATA_PROJECT_DIR "scripts\check_and_deploy.ps1"
+          $pathFile = Join-Path $HOME "anidata-runner\project_path.txt"
+          $ProjectDir = (Get-Content $pathFile -Raw).Trim()
+          $script = Join-Path $ProjectDir "scripts\check_and_deploy.ps1"
           & $script -Sha $env:COMMIT_SHA
