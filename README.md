@@ -179,3 +179,5 @@ service Airflow (`/opt/airflow/data/raw/`). Le DAG `etl_dag` (démarré par
 `TriggerDagRunOperator` depuis le DAG scraper) lit ce fichier, transforme
 les données et les indexe dans l'index Elasticsearch existant
 (`anidex_animes`), enrichissant ainsi la base constituée en semaine 1.
+
+CI CD test
