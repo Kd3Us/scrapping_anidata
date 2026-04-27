@@ -112,21 +112,24 @@ Le script `scripts/check_and_deploy.sh` est un agent CD local qui tourne en cron
 GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
 ```
 
-### Installer le cron
+### Installer la tache planifiee (Windows)
 
-```bash
-bash scripts/setup_cron.sh
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\setup_task.ps1
 ```
 
-Le cron s'execute toutes les 5 minutes. La ligne ajoutee ressemble a :
-```
-*/5 * * * * bash /chemin/vers/scripts/check_and_deploy.sh
+La tache `AniData-CD` s'execute toutes les 5 minutes via le Planificateur de taches Windows.
+
+### Tester manuellement sans attendre la tache
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\check_and_deploy.ps1
 ```
 
 ### Voir les logs en temps reel
 
-```bash
-tail -f /tmp/anidata_deploy.log
+```powershell
+Get-Content "$env:TEMP\anidata_deploy.log" -Wait -Tail 20
 ```
 
 Exemples de sortie :
@@ -137,10 +140,10 @@ Exemples de sortie :
 [2026-04-27 14:40:01] CI pas verte (failure), pas de deploiement
 ```
 
-### Desinstaller le cron
+### Desinstaller la tache
 
-```bash
-bash scripts/remove_cron.sh
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\remove_task.ps1
 ```
 
 ---
