@@ -96,6 +96,10 @@ jobs:
     runs-on: self-hosted
     if: github.event_name != 'pull_request'
     steps:
+      - name: Installer les dépendances du script CD
+        shell: pwsh
+        run: pip install requests
+
       - name: Deployer la nouvelle image
         shell: pwsh
         env:
@@ -103,5 +107,5 @@ jobs:
         run: |
           $pathFile = Join-Path $HOME "anidata-runner\project_path.txt"
           $ProjectDir = (Get-Content $pathFile -Raw).Trim()
-          $script = Join-Path $ProjectDir "scripts\check_and_deploy.ps1"
-          & $script -Sha $env:COMMIT_SHA
+          $script = Join-Path $ProjectDir "scripts\check_and_deploy.py"
+          python $script --sha $env:COMMIT_SHA
