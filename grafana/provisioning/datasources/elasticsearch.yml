@@ -1,0 +1,22 @@
+# ============================================
+# Datasource Elasticsearch auto-configurée
+# Les apprenants n'ont rien à faire !
+# ============================================
+
+apiVersion: 1
+
+datasources:
+  - name: Elasticsearch - Anime
+    uid: elasticsearch-anime
+    type: elasticsearch
+    access: proxy
+    url: http://elasticsearch:9200
+    database: "anime"
+    isDefault: true
+    editable: true
+    jsonData:
+      esVersion: "8.12.0"
+      timeField: "indexed_at"
+      logLevelField: ""
+      logMessageField: ""
+      maxConcurrentShardRequests: 5

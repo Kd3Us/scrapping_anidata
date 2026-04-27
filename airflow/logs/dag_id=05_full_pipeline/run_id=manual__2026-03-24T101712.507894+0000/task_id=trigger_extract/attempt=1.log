@@ -1,0 +1,17 @@
+[2026-03-24T10:17:14.704+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 05_full_pipeline.trigger_extract manual__2026-03-24T10:17:12.507894+00:00 [queued]>
+[2026-03-24T10:17:14.720+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 05_full_pipeline.trigger_extract manual__2026-03-24T10:17:12.507894+00:00 [queued]>
+[2026-03-24T10:17:14.721+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-03-24T10:17:14.746+0000] {taskinstance.py:2191} INFO - Executing <Task(TriggerDagRunOperator): trigger_extract> on 2026-03-24 10:17:12.507894+00:00
+[2026-03-24T10:17:14.754+0000] {standard_task_runner.py:60} INFO - Started process 7881 to run task
+[2026-03-24T10:17:14.758+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '05_full_pipeline', 'trigger_extract', 'manual__2026-03-24T10:17:12.507894+00:00', '--job-id', '151', '--raw', '--subdir', 'DAGS_FOLDER/05_full_pipeline.py', '--cfg-path', '/tmp/tmp0bzpra_v']
+[2026-03-24T10:17:14.763+0000] {standard_task_runner.py:88} INFO - Job 151: Subtask trigger_extract
+[2026-03-24T10:17:14.865+0000] {task_command.py:423} INFO - Running <TaskInstance: 05_full_pipeline.trigger_extract manual__2026-03-24T10:17:12.507894+00:00 [running]> on host 67583f3fa599
+[2026-03-24T10:17:15.035+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='05_full_pipeline' AIRFLOW_CTX_TASK_ID='trigger_extract' AIRFLOW_CTX_EXECUTION_DATE='2026-03-24T10:17:12.507894+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-24T10:17:12.507894+00:00'
+[2026-03-24T10:17:15.198+0000] {trigger_dagrun.py:210} INFO - Waiting for 01_extract_anime on 2026-03-24 10:17:15.037459+00:00 to become allowed state ['success'] ...
+[2026-03-24T10:17:25.029+0000] {trigger_dagrun.py:210} INFO - Waiting for 01_extract_anime on 2026-03-24 10:17:15.037459+00:00 to become allowed state ['success'] ...
+[2026-03-24T10:17:35.047+0000] {trigger_dagrun.py:210} INFO - Waiting for 01_extract_anime on 2026-03-24 10:17:15.037459+00:00 to become allowed state ['success'] ...
+[2026-03-24T10:17:45.067+0000] {trigger_dagrun.py:210} INFO - Waiting for 01_extract_anime on 2026-03-24 10:17:15.037459+00:00 to become allowed state ['success'] ...
+[2026-03-24T10:17:54.898+0000] {trigger_dagrun.py:223} INFO - 01_extract_anime finished with allowed state success
+[2026-03-24T10:17:54.918+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=05_full_pipeline, task_id=trigger_extract, execution_date=20260324T101712, start_date=20260324T101714, end_date=20260324T101754
+[2026-03-24T10:17:54.976+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-24T10:17:55.028+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,15 @@
+[2026-03-24T10:17:13.141+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 05_full_pipeline.log_start manual__2026-03-24T10:17:12.507894+00:00 [queued]>
+[2026-03-24T10:17:13.156+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 05_full_pipeline.log_start manual__2026-03-24T10:17:12.507894+00:00 [queued]>
+[2026-03-24T10:17:13.157+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-03-24T10:17:13.181+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): log_start> on 2026-03-24 10:17:12.507894+00:00
+[2026-03-24T10:17:13.188+0000] {standard_task_runner.py:60} INFO - Started process 7879 to run task
+[2026-03-24T10:17:13.193+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '05_full_pipeline', 'log_start', 'manual__2026-03-24T10:17:12.507894+00:00', '--job-id', '150', '--raw', '--subdir', 'DAGS_FOLDER/05_full_pipeline.py', '--cfg-path', '/tmp/tmpcl3nirq4']
+[2026-03-24T10:17:13.196+0000] {standard_task_runner.py:88} INFO - Job 150: Subtask log_start
+[2026-03-24T10:17:13.297+0000] {task_command.py:423} INFO - Running <TaskInstance: 05_full_pipeline.log_start manual__2026-03-24T10:17:12.507894+00:00 [running]> on host 67583f3fa599
+[2026-03-24T10:17:13.476+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='05_full_pipeline' AIRFLOW_CTX_TASK_ID='log_start' AIRFLOW_CTX_EXECUTION_DATE='2026-03-24T10:17:12.507894+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-24T10:17:12.507894+00:00'
+[2026-03-24T10:17:13.479+0000] {logging_mixin.py:188} INFO - Pipeline ETL AniData Lab — Démarrage
+[2026-03-24T10:17:13.480+0000] {logging_mixin.py:188} INFO - Extract > Transform > Load > Anomaly Detection
+[2026-03-24T10:17:13.481+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-03-24T10:17:13.507+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=05_full_pipeline, task_id=log_start, execution_date=20260324T101712, start_date=20260324T101713, end_date=20260324T101713
+[2026-03-24T10:17:13.568+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-24T10:17:13.625+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

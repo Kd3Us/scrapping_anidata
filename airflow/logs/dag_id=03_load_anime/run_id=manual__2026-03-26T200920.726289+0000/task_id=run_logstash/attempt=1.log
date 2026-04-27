@@ -1,0 +1,55 @@
+[2026-03-26T20:09:25.020+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 03_load_anime.run_logstash manual__2026-03-26T20:09:20.726289+00:00 [queued]>
+[2026-03-26T20:09:25.036+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 03_load_anime.run_logstash manual__2026-03-26T20:09:20.726289+00:00 [queued]>
+[2026-03-26T20:09:25.036+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-26T20:09:25.060+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): run_logstash> on 2026-03-26 20:09:20.726289+00:00
+[2026-03-26T20:09:25.071+0000] {standard_task_runner.py:60} INFO - Started process 1006 to run task
+[2026-03-26T20:09:25.076+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '03_load_anime', 'run_logstash', 'manual__2026-03-26T20:09:20.726289+00:00', '--job-id', '305', '--raw', '--subdir', 'DAGS_FOLDER/03_load_anime.py', '--cfg-path', '/tmp/tmpeownvtae']
+[2026-03-26T20:09:25.080+0000] {standard_task_runner.py:88} INFO - Job 305: Subtask run_logstash
+[2026-03-26T20:09:25.183+0000] {task_command.py:423} INFO - Running <TaskInstance: 03_load_anime.run_logstash manual__2026-03-26T20:09:20.726289+00:00 [running]> on host 9da8d26a51c8
+[2026-03-26T20:09:25.614+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='03_load_anime' AIRFLOW_CTX_TASK_ID='run_logstash' AIRFLOW_CTX_EXECUTION_DATE='2026-03-26T20:09:20.726289+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-26T20:09:20.726289+00:00'
+[2026-03-26T20:09:25.722+0000] {logging_mixin.py:188} INFO - Chemin hôte data     : C:\Users\Al\Desktop\Travail\Cours_HETIC\2nd_year\1st_semester\Feature_enginering\TP\Data-Engineering-101\data
+[2026-03-26T20:09:25.723+0000] {logging_mixin.py:188} INFO - Chemin hôte pipeline : C:\Users\Al\Desktop\Travail\Cours_HETIC\2nd_year\1st_semester\Feature_enginering\TP\Data-Engineering-101\elk\logstash\pipeline
+[2026-03-26T20:09:25.734+0000] {logging_mixin.py:188} INFO - Suppression du conteneur résiduel : anidata-logstash-run
+[2026-03-26T20:09:26.157+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/docker/api/client.py", line 265, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: http+docker://localhost/v1.48/containers/79ad8f76815886fae5734af93931cd58b6bab51e85aeab66342a0364a67c86b3/start
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 428, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/03_load_anime.py", line 66, in _run_logstash
+    container = client.containers.run(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/docker/models/containers.py", line 880, in run
+    container.start()
+  File "/home/airflow/.local/lib/python3.11/site-packages/docker/models/containers.py", line 417, in start
+    return self.client.api.start(self.id, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/docker/utils/decorators.py", line 19, in wrapped
+    return f(self, resource_id, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/docker/api/container.py", line 1135, in start
+    self._raise_for_status(res)
+  File "/home/airflow/.local/lib/python3.11/site-packages/docker/api/client.py", line 267, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.NotFound: 404 Client Error for http+docker://localhost/v1.48/containers/79ad8f76815886fae5734af93931cd58b6bab51e85aeab66342a0364a67c86b3/start: Not Found ("failed to set up container networking: network Data-Engineering-101_anidata-network not found")
+[2026-03-26T20:09:26.195+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=03_load_anime, task_id=run_logstash, execution_date=20260326T200920, start_date=20260326T200925, end_date=20260326T200926
+[2026-03-26T20:09:26.224+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 305 for task run_logstash (404 Client Error for http+docker://localhost/v1.48/containers/79ad8f76815886fae5734af93931cd58b6bab51e85aeab66342a0364a67c86b3/start: Not Found ("failed to set up container networking: network Data-Engineering-101_anidata-network not found"); 1006)
+[2026-03-26T20:09:26.253+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-03-26T20:09:26.308+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

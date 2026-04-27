@@ -1,0 +1,51 @@
+[2026-03-24T10:18:51.618+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 03_load_anime.bulk_index manual__2026-03-24T10:18:48.217975+00:00 [queued]>
+[2026-03-24T10:18:51.633+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 03_load_anime.bulk_index manual__2026-03-24T10:18:48.217975+00:00 [queued]>
+[2026-03-24T10:18:51.634+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-24T10:18:51.655+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): bulk_index> on 2026-03-24 10:18:48.217975+00:00
+[2026-03-24T10:18:51.665+0000] {standard_task_runner.py:60} INFO - Started process 8117 to run task
+[2026-03-24T10:18:51.670+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '03_load_anime', 'bulk_index', 'manual__2026-03-24T10:18:48.217975+00:00', '--job-id', '166', '--raw', '--subdir', 'DAGS_FOLDER/03_load_anime.py', '--cfg-path', '/tmp/tmpwyxnn2uo']
+[2026-03-24T10:18:51.674+0000] {standard_task_runner.py:88} INFO - Job 166: Subtask bulk_index
+[2026-03-24T10:18:51.773+0000] {task_command.py:423} INFO - Running <TaskInstance: 03_load_anime.bulk_index manual__2026-03-24T10:18:48.217975+00:00 [running]> on host 67583f3fa599
+[2026-03-24T10:18:52.235+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='03_load_anime' AIRFLOW_CTX_TASK_ID='bulk_index' AIRFLOW_CTX_EXECUTION_DATE='2026-03-24T10:18:48.217975+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-24T10:18:48.217975+00:00'
+[2026-03-24T10:18:52.738+0000] {_transport.py:335} INFO - HEAD http://elasticsearch:9200/ [status:200 duration:0.006s]
+[2026-03-24T10:18:55.141+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.147s]
+[2026-03-24T10:18:55.266+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.093s]
+[2026-03-24T10:18:55.393+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.094s]
+[2026-03-24T10:18:55.507+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.084s]
+[2026-03-24T10:18:55.619+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.082s]
+[2026-03-24T10:18:55.754+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.105s]
+[2026-03-24T10:18:56.058+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.081s]
+[2026-03-24T10:18:56.171+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.082s]
+[2026-03-24T10:18:56.278+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.078s]
+[2026-03-24T10:18:56.390+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.083s]
+[2026-03-24T10:18:56.496+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.077s]
+[2026-03-24T10:18:56.605+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.079s]
+[2026-03-24T10:18:56.707+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.073s]
+[2026-03-24T10:18:56.828+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.089s]
+[2026-03-24T10:18:56.941+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.084s]
+[2026-03-24T10:18:57.044+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.076s]
+[2026-03-24T10:18:57.153+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.080s]
+[2026-03-24T10:18:57.262+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.079s]
+[2026-03-24T10:18:57.360+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.070s]
+[2026-03-24T10:18:57.464+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.075s]
+[2026-03-24T10:18:57.555+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.064s]
+[2026-03-24T10:18:57.657+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.074s]
+[2026-03-24T10:18:57.790+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.100s]
+[2026-03-24T10:18:57.905+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.085s]
+[2026-03-24T10:18:58.041+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.108s]
+[2026-03-24T10:18:58.138+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.069s]
+[2026-03-24T10:18:58.242+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.069s]
+[2026-03-24T10:18:58.351+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.077s]
+[2026-03-24T10:18:58.466+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.086s]
+[2026-03-24T10:18:58.612+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.098s]
+[2026-03-24T10:18:58.727+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.084s]
+[2026-03-24T10:18:58.831+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.076s]
+[2026-03-24T10:18:58.932+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.073s]
+[2026-03-24T10:18:59.024+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.066s]
+[2026-03-24T10:18:59.113+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.064s]
+[2026-03-24T10:18:59.136+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/_bulk [status:200 duration:0.016s]
+[2026-03-24T10:18:59.169+0000] {logging_mixin.py:188} INFO - Indexation : 17562/17562 docs, 0 erreurs
+[2026-03-24T10:18:59.171+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-03-24T10:18:59.193+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=03_load_anime, task_id=bulk_index, execution_date=20260324T101848, start_date=20260324T101851, end_date=20260324T101859
+[2026-03-24T10:18:59.249+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-24T10:18:59.282+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
