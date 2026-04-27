@@ -6,9 +6,6 @@
 
 services:
 
-  # ==========================================
-  # ELASTICSEARCH
-  # ==========================================
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTIC_VERSION}
     container_name: anidata-elasticsearch
@@ -36,9 +33,6 @@ services:
     networks:
       - anidata-network
 
-  # ==========================================
-  # GRAFANA
-  # ==========================================
   grafana:
     image: grafana/grafana-oss:10.3.1
     container_name: anidata-grafana
@@ -59,10 +53,6 @@ services:
     networks:
       - anidata-network
 
-  # ==========================================
-  # LOGSTASH (profil "ingest" - lancé à la demande)
-  # Usage : docker compose --profile ingest up logstash
-  # ==========================================
   logstash:
     image: docker.elastic.co/logstash/logstash:${ELASTIC_VERSION}
     container_name: anidata-logstash
@@ -81,11 +71,6 @@ services:
     networks:
       - anidata-network
 
-  # ==========================================
-  # MOCK-SITE (nginx - cible du scraper)
-  # Accessible depuis les DAGs via http://mock-site
-  # Accessible depuis le navigateur via http://localhost:8088
-  # ==========================================
   mock-site:
     image: nginx:alpine
     container_name: anidata-mock-site
@@ -97,9 +82,6 @@ services:
     networks:
       - anidata-network
 
-  # ==========================================
-  # POSTGRESQL (backend Airflow)
-  # ==========================================
   postgres:
     image: postgres:15-alpine
     container_name: anidata-postgres
@@ -118,11 +100,8 @@ services:
     networks:
       - anidata-network
 
-  # ==========================================
-  # AIRFLOW - Init (exécuté une seule fois)
-  # ==========================================
   airflow-init:
-    image: apache/airflow:2.8.1-python3.11
+    image: ghcr.io/${GITHUB_REPOSITORY}-airflow:latest
     container_name: anidata-airflow-init
     entrypoint: /bin/bash
     command:
@@ -158,11 +137,8 @@ services:
     networks:
       - anidata-network
 
-  # ==========================================
-  # AIRFLOW - Webserver
-  # ==========================================
   airflow-webserver:
-    image: apache/airflow:2.8.1-python3.11
+    image: ghcr.io/${GITHUB_REPOSITORY}-airflow:latest
     container_name: anidata-airflow-webserver
     command: webserver
     environment:
@@ -173,7 +149,6 @@ services:
       - AIRFLOW__WEBSERVER__SECRET_KEY=${AIRFLOW__WEBSERVER__SECRET_KEY}
       - AIRFLOW__WEBSERVER__EXPOSE_CONFIG=${AIRFLOW__WEBSERVER__EXPOSE_CONFIG}
       - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=${AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION}
-      - _PIP_ADDITIONAL_REQUIREMENTS=pandas pyarrow elasticsearch apache-airflow-providers-elasticsearch beautifulsoup4 requests
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
@@ -197,11 +172,8 @@ services:
     networks:
       - anidata-network
 
-  # ==========================================
-  # AIRFLOW - Scheduler
-  # ==========================================
   airflow-scheduler:
-    image: apache/airflow:2.8.1-python3.11
+    image: ghcr.io/${GITHUB_REPOSITORY}-airflow:latest
     container_name: anidata-airflow-scheduler
     command: scheduler
     environment:
@@ -210,7 +182,6 @@ services:
       - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}
       - AIRFLOW__CORE__LOAD_EXAMPLES=${AIRFLOW__CORE__LOAD_EXAMPLES}
       - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=${AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION}
-      - _PIP_ADDITIONAL_REQUIREMENTS=pandas pyarrow elasticsearch apache-airflow-providers-elasticsearch beautifulsoup4 requests
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
@@ -227,9 +198,6 @@ services:
     networks:
       - anidata-network
 
-# ==========================================
-# VOLUMES
-# ==========================================
 volumes:
   es_data:
     driver: local
@@ -238,9 +206,6 @@ volumes:
   grafana_data:
     driver: local
 
-# ==========================================
-# NETWORK
-# ==========================================
 networks:
   anidata-network:
     driver: bridge

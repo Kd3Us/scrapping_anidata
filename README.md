@@ -1,183 +1,170 @@
-# AniData Scraper
+# AniData Lab
 
-Scraper du mock-site AniDex pour le projet **AniData Lab — Semaine 2 DevOps & CI/CD**.
+Pipeline de scraping, transformation et visualisation de données anime, déployé via CI/CD GitHub Actions sur une stack Docker Airflow + Elasticsearch + Grafana.
 
-Extrait les données anime et les actualités depuis le mock-site HTML local
-(cf. dépôt `mock-site`), les enrichit, et produit un JSON consommable par le
-DAG ETL Airflow.
+---
+
+## Architecture
+
+```
+Dev
+ |
+ | git push / git tag
+ v
+GitHub Actions
+ ├── lint   (ruff)
+ ├── tests  (pytest 3.10 + 3.11)
+ └── build-and-push → GHCR (ghcr.io/Kd3Us/scrapping_anidata-airflow:latest)
+                          |
+                          | docker compose pull
+                          v
+                      Airflow (webserver + scheduler)
+                          |
+                 ┌────────┴────────┐
+                 v                 v
+           scraper_dag         (trigger)
+           [scrape_to_file]        |
+                 |                 v
+                 └──────→    etl_dag
+                          [load_to_elasticsearch]
+                                   |
+                                   v
+                           Elasticsearch :9200
+                           (index: anidex_animes)
+                                   |
+                                   v
+                              Grafana :3000
+```
+
+---
+
+## Prerequis
+
+- Docker Desktop >= 4.0
+- Python 3.10+
+- Compte GitHub avec accès au repo `Kd3Us/scrapping_anidata`
 
 ---
 
 ## Installation
 
 ```bash
-# Création d'un environnement virtuel (recommandé)
-python3 -m venv .venv
-source .venv/bin/activate   # Linux/Mac
-# .venv\Scripts\activate    # Windows
+cp .env.example .env
+docker compose up -d
+```
 
-# Dépendances runtime
-pip install -r requirements.txt
+Le premier `up` telecharge l'image depuis GHCR, initialise la base Airflow et demarre tous les services.
 
-# OU dépendances dev (runtime + tests + lint)
+---
+
+## Lancement
+
+| Service       | URL                      | Identifiants  |
+|---------------|--------------------------|---------------|
+| Airflow       | http://localhost:8080    | admin / admin |
+| Grafana       | http://localhost:3000    | admin / anidata |
+| Elasticsearch | http://localhost:9200    | sans auth     |
+| Mock-site     | http://localhost:8088    | —             |
+
+Pour demarrer le scraping manuellement, activer le DAG `scraper_dag` dans l'interface Airflow puis le declencher.
+
+---
+
+## DAGs
+
+### scraper_dag
+
+Scrape l'ensemble du catalogue du mock-site (pagination automatique, enrichissement via pages detail, retry exponentiel) et ecrit un fichier `anime_YYYYMMDD_HHMMSS.json` dans `/opt/airflow/data/raw/`. Declenche ensuite `etl_dag` en lui passant le chemin du fichier via XCom.
+
+Schedule : `@daily` — catchup desactive.
+
+### etl_dag
+
+Lit le fichier JSON produit par `scraper_dag` (chemin recupère depuis `dag_run.conf` ou XCom), cree l'index `anidex_animes` dans Elasticsearch si absent (avec mapping complet), puis indexe en masse tous les animes via `helpers.bulk`.
+
+Schedule : `None` (declenche uniquement par `scraper_dag`).
+
+---
+
+## Chaine CI/CD
+
+**Job `lint`** — Execute `ruff check` sur `anidata_scraper/` et `tests/`. Bloque le pipeline si le code ne respecte pas le style defini dans `pyproject.toml`.
+
+**Job `tests`** — Execute `pytest --cov` en parallele sur Python 3.10 et 3.11 (`fail-fast: false`). Valide que les tests passent et que la couverture est disponible avant tout build.
+
+**Job `build-and-push`** — Se declenche uniquement apres `lint` et `tests`, et seulement sur push vers `master` ou tag semver. Construit l'image Docker et la pousse sur GHCR avec les tags `latest`, `sha-<court>` et `vX.Y.Z`.
+
+---
+
+## Deploiement automatique CD
+
+Le script `scripts/check_and_deploy.sh` est un agent CD local qui tourne en cron. Toutes les 5 minutes il interroge l'API GitHub, compare le SHA du dernier run reussi avec le SHA deja deploye, et effectue un `docker compose pull` + `up` uniquement si une nouvelle image est disponible.
+
+### Generer un Personal Access Token GitHub
+
+1. Aller sur https://github.com/settings/tokens/new
+2. Nom : `anidata-cd-local`
+3. Scopes requis : `read:packages`, `workflow`
+4. Copier le token genere
+
+```bash
+# Ajouter dans .env
+GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
+```
+
+### Installer le cron
+
+```bash
+bash scripts/setup_cron.sh
+```
+
+Le cron s'execute toutes les 5 minutes. La ligne ajoutee ressemble a :
+```
+*/5 * * * * bash /chemin/vers/scripts/check_and_deploy.sh
+```
+
+### Voir les logs en temps reel
+
+```bash
+tail -f /tmp/anidata_deploy.log
+```
+
+Exemples de sortie :
+```
+[2026-04-27 14:30:01] Deja a jour, rien a faire
+[2026-04-27 14:35:01] Nouvelle image detectee (SHA: a1b2c3d) - deploiement en cours...
+[2026-04-27 14:35:45] Deploiement OK - SHA: a1b2c3d
+[2026-04-27 14:40:01] CI pas verte (failure), pas de deploiement
+```
+
+### Desinstaller le cron
+
+```bash
+bash scripts/remove_cron.sh
+```
+
+---
+
+## Developpement local (sans Docker)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements-dev.txt
-```
 
----
-
-## Usage
-
-### En ligne de commande
-
-```bash
-# Scraping complet vers ./data/raw/
-python -m anidata_scraper.scraper --base-url http://localhost:8088 --output-dir ./data/raw
-
-# Scraping rapide (sans enrichissement via pages détail)
-python -m anidata_scraper.scraper --no-enrich
-
-# Mode verbeux (DEBUG)
-python -m anidata_scraper.scraper -v
-```
-
-Le scraper produit un fichier `anime_YYYYMMDD_HHMMSS.json` dans le répertoire
-de sortie (créé s'il n'existe pas).
-
-### Depuis un DAG Airflow
-
-```python
-from datetime import datetime
-from airflow import DAG
-from airflow.operators.python import PythonOperator
-
-from anidata_scraper import scrape_to_file
-
-with DAG(
-    "scraper_dag",
-    schedule="@daily",
-    start_date=datetime(2026, 4, 27),
-    catchup=False,
-) as dag:
-
-    scrape_task = PythonOperator(
-        task_id="scrape_anidex",
-        python_callable=scrape_to_file,
-        op_kwargs={
-            "output_dir": "/opt/airflow/data/raw",
-            "base_url": "http://mock-site",  # nom du service Docker
-        },
-    )
-```
-
-La fonction `scrape_to_file` renvoie le chemin du fichier produit, qui est
-automatiquement poussé dans XCom et peut être consommé par le DAG ETL en aval.
-
----
-
-## Structure du projet
-
-```
-anidata-scraper/
-├── anidata_scraper/
-│   ├── __init__.py
-│   └── scraper.py          # Module principal
-├── tests/
-│   ├── __init__.py
-│   ├── fixtures.py         # Fragments HTML pour les tests
-│   └── test_scraper.py     # Tests pytest
-├── requirements.txt
-├── requirements-dev.txt
-├── pyproject.toml          # Config pytest, ruff
-├── .gitignore
-└── README.md
-```
-
----
-
-## Tests & qualité
-
-```bash
-# Tests unitaires
-pytest
-
-# Avec couverture
 pytest --cov=anidata_scraper --cov-report=term-missing
-
-# Lint
 ruff check anidata_scraper/ tests/
 
-# Formatage auto
-ruff format anidata_scraper/ tests/
-```
-
-Les tests sont conçus pour tourner **sans le mock-site actif** : ils utilisent
-des fragments HTML embarqués (`tests/fixtures.py`) et mockent les appels HTTP
-via `monkeypatch`. Ils sont donc parfaitement adaptés à l'exécution en CI.
-
----
-
-## Structure du JSON produit
-
-```json
-{
-  "scraped_at": "2026-04-27T09:15:23+00:00",
-  "source": "http://mock-site",
-  "stats": {
-    "animes_count": 103,
-    "news_count": 8,
-    "missing_scores": 4,
-    "missing_studios": 3
-  },
-  "animes": [
-    {
-      "id": 1,
-      "title_en": "Attack on Titan",
-      "title_jp": "進撃の巨人",
-      "detail_url": "/anime/attack-on-titan.html",
-      "year": 2013,
-      "studio": "Wit Studio",
-      "score": 9.0,
-      "genres": ["Action", "Drama", "Fantasy"],
-      "type": "TV",
-      "episodes": 25,
-      "status": "Finished Airing",
-      "synopsis": "Dans un monde où l'humanité..."
-    }
-  ],
-  "news": [
-    {
-      "title": "Les animes les plus attendus du printemps 2026",
-      "url": "/news/printemps-2026.html",
-      "category": "Saisonnier",
-      "published_at": "2026-04-01",
-      "body": null
-    }
-  ]
-}
+python -m anidata_scraper.scraper --base-url http://localhost:8088 --output-dir ./data/raw
 ```
 
 ---
 
-## Fonctionnalités
+## Declencher le pipeline de versioning
 
-- **Scraping paginé** : détecte dynamiquement le nombre de pages du catalogue
-- **Enrichissement** : parcourt les pages détail pour récupérer synopsis,
-  épisodes, type, statut
-- **Robustesse** :
-  - Retry exponentiel sur erreurs réseau et 5xx
-  - Pas de retry sur 4xx (erreurs client)
-  - Gestion défensive des valeurs manquantes (score "N/A", studio vide)
-  - Support des deux structures HTML présentes sur le site (`<table>` ET `<dl>`)
-- **Observabilité** : logging structuré, stats de qualité dans la sortie
+Pour publier une version taguee sur GHCR :
 
----
-
-## Intégration avec le pipeline ETL
-
-Le fichier JSON produit est déposé dans un volume Docker partagé avec le
-service Airflow (`/opt/airflow/data/raw/`). Le DAG `etl_dag` (démarré par
-`TriggerDagRunOperator` depuis le DAG scraper) lit ce fichier, transforme
-les données et les indexe dans l'index Elasticsearch existant
-(`anidex_animes`), enrichissant ainsi la base constituée en semaine 1.
-
-CI CD test
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
