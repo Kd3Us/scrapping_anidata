@@ -3187,3 +3187,38 @@
 [2026-04-27T12:11:07.580+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:07.577+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-04-27T12:11:07.600+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:07.599+0000] {dag.py:3823} INFO - Setting next_dagrun for 01_extract_anime to None, run_after=None
 [2026-04-27T12:11:07.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/01_extract_anime.py took 0.828 seconds
+[2026-04-27T12:11:37.844+0000] {processor.py:161} INFO - Started process (PID=18807) to work on /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:11:37.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/01_extract_anime.py for tasks to queue
+[2026-04-27T12:11:37.849+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:37.848+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:11:38.561+0000] {processor.py:840} INFO - DAG(s) '01_extract_anime' retrieved from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:11:38.603+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:38.602+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:11:38.624+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:38.623+0000] {dag.py:3823} INFO - Setting next_dagrun for 01_extract_anime to None, run_after=None
+[2026-04-27T12:11:38.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/01_extract_anime.py took 0.822 seconds
+[2026-04-27T12:12:09.456+0000] {processor.py:161} INFO - Started process (PID=18858) to work on /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:12:09.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/01_extract_anime.py for tasks to queue
+[2026-04-27T12:12:09.459+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:09.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:12:10.172+0000] {processor.py:840} INFO - DAG(s) '01_extract_anime' retrieved from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:12:10.213+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:10.211+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:12:10.234+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:10.233+0000] {dag.py:3823} INFO - Setting next_dagrun for 01_extract_anime to None, run_after=None
+[2026-04-27T12:12:10.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/01_extract_anime.py took 0.824 seconds
+[2026-04-27T12:12:40.803+0000] {processor.py:161} INFO - Started process (PID=18905) to work on /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:12:40.805+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/01_extract_anime.py for tasks to queue
+[2026-04-27T12:12:40.807+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:40.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:12:41.525+0000] {processor.py:840} INFO - DAG(s) '01_extract_anime' retrieved from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:12:41.564+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:41.564+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:12:41.585+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:41.585+0000] {dag.py:3823} INFO - Setting next_dagrun for 01_extract_anime to None, run_after=None
+[2026-04-27T12:12:41.623+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/01_extract_anime.py took 0.826 seconds
+[2026-04-27T12:13:12.070+0000] {processor.py:161} INFO - Started process (PID=18954) to work on /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:13:12.072+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/01_extract_anime.py for tasks to queue
+[2026-04-27T12:13:12.074+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:12.073+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:13:12.826+0000] {processor.py:840} INFO - DAG(s) '01_extract_anime' retrieved from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:13:12.869+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:12.868+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:13:12.889+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:12.889+0000] {dag.py:3823} INFO - Setting next_dagrun for 01_extract_anime to None, run_after=None
+[2026-04-27T12:13:12.927+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/01_extract_anime.py took 0.863 seconds
+[2026-04-27T12:13:43.054+0000] {processor.py:161} INFO - Started process (PID=19002) to work on /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:13:43.056+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/01_extract_anime.py for tasks to queue
+[2026-04-27T12:13:43.058+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:43.058+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:13:43.814+0000] {processor.py:840} INFO - DAG(s) '01_extract_anime' retrieved from /opt/airflow/dags/01_extract_anime.py
+[2026-04-27T12:13:43.854+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:43.853+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:13:43.879+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:43.878+0000] {dag.py:3823} INFO - Setting next_dagrun for 01_extract_anime to None, run_after=None
+[2026-04-27T12:13:43.916+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/01_extract_anime.py took 0.868 seconds

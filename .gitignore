@@ -15,7 +15,7 @@ dist/
 venv/
 env/
 .env
-
+.logs/
 
 # IDE
 .vscode/

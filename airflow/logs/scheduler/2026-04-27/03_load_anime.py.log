@@ -3180,3 +3180,31 @@
 [2026-04-27T12:11:25.197+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:25.196+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-04-27T12:11:25.221+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:25.221+0000] {dag.py:3823} INFO - Setting next_dagrun for 03_load_anime to None, run_after=None
 [2026-04-27T12:11:25.258+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/03_load_anime.py took 1.024 seconds
+[2026-04-27T12:11:56.185+0000] {processor.py:161} INFO - Started process (PID=18825) to work on /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:11:56.187+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/03_load_anime.py for tasks to queue
+[2026-04-27T12:11:56.189+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:56.188+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:11:57.012+0000] {processor.py:840} INFO - DAG(s) '03_load_anime' retrieved from /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:11:57.054+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:57.053+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:11:57.075+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:57.075+0000] {dag.py:3823} INFO - Setting next_dagrun for 03_load_anime to None, run_after=None
+[2026-04-27T12:11:57.110+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/03_load_anime.py took 0.932 seconds
+[2026-04-27T12:12:27.307+0000] {processor.py:161} INFO - Started process (PID=18874) to work on /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:12:27.309+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/03_load_anime.py for tasks to queue
+[2026-04-27T12:12:27.311+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:27.310+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:12:28.177+0000] {processor.py:840} INFO - DAG(s) '03_load_anime' retrieved from /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:12:28.216+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:28.215+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:12:28.237+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:28.237+0000] {dag.py:3823} INFO - Setting next_dagrun for 03_load_anime to None, run_after=None
+[2026-04-27T12:12:28.277+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/03_load_anime.py took 0.976 seconds
+[2026-04-27T12:12:58.730+0000] {processor.py:161} INFO - Started process (PID=18923) to work on /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:12:58.732+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/03_load_anime.py for tasks to queue
+[2026-04-27T12:12:58.734+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:58.733+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:12:59.564+0000] {processor.py:840} INFO - DAG(s) '03_load_anime' retrieved from /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:12:59.606+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:59.605+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:12:59.628+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:59.627+0000] {dag.py:3823} INFO - Setting next_dagrun for 03_load_anime to None, run_after=None
+[2026-04-27T12:12:59.670+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/03_load_anime.py took 0.946 seconds
+[2026-04-27T12:13:30.440+0000] {processor.py:161} INFO - Started process (PID=18972) to work on /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:13:30.441+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/03_load_anime.py for tasks to queue
+[2026-04-27T12:13:30.443+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:30.443+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:13:31.298+0000] {processor.py:840} INFO - DAG(s) '03_load_anime' retrieved from /opt/airflow/dags/03_load_anime.py
+[2026-04-27T12:13:31.342+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:31.341+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:13:31.364+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:31.364+0000] {dag.py:3823} INFO - Setting next_dagrun for 03_load_anime to None, run_after=None
+[2026-04-27T12:13:31.402+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/03_load_anime.py took 0.969 seconds

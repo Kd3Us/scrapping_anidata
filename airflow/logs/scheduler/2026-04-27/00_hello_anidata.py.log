@@ -3222,3 +3222,31 @@
 [2026-04-27T12:11:29.538+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:29.537+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-04-27T12:11:29.564+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:29.564+0000] {dag.py:3823} INFO - Setting next_dagrun for 00_hello_anidata to None, run_after=None
 [2026-04-27T12:11:29.609+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/00_hello_anidata.py took 0.172 seconds
+[2026-04-27T12:12:00.457+0000] {processor.py:161} INFO - Started process (PID=18836) to work on /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:12:00.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/00_hello_anidata.py for tasks to queue
+[2026-04-27T12:12:00.460+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:00.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:12:00.498+0000] {processor.py:840} INFO - DAG(s) '00_hello_anidata' retrieved from /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:12:00.543+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:00.542+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:12:00.568+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:00.568+0000] {dag.py:3823} INFO - Setting next_dagrun for 00_hello_anidata to None, run_after=None
+[2026-04-27T12:12:00.606+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/00_hello_anidata.py took 0.155 seconds
+[2026-04-27T12:12:31.458+0000] {processor.py:161} INFO - Started process (PID=18885) to work on /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:12:31.460+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/00_hello_anidata.py for tasks to queue
+[2026-04-27T12:12:31.462+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:31.462+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:12:31.506+0000] {processor.py:840} INFO - DAG(s) '00_hello_anidata' retrieved from /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:12:31.553+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:31.553+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:12:31.577+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:12:31.577+0000] {dag.py:3823} INFO - Setting next_dagrun for 00_hello_anidata to None, run_after=None
+[2026-04-27T12:12:31.621+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/00_hello_anidata.py took 0.172 seconds
+[2026-04-27T12:13:01.831+0000] {processor.py:161} INFO - Started process (PID=18934) to work on /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:13:01.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/00_hello_anidata.py for tasks to queue
+[2026-04-27T12:13:01.835+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:01.835+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:13:01.873+0000] {processor.py:840} INFO - DAG(s) '00_hello_anidata' retrieved from /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:13:01.924+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:01.924+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:13:01.949+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:01.949+0000] {dag.py:3823} INFO - Setting next_dagrun for 00_hello_anidata to None, run_after=None
+[2026-04-27T12:13:01.994+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/00_hello_anidata.py took 0.169 seconds
+[2026-04-27T12:13:32.648+0000] {processor.py:161} INFO - Started process (PID=18983) to work on /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:13:32.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/00_hello_anidata.py for tasks to queue
+[2026-04-27T12:13:32.652+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:32.652+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:13:32.690+0000] {processor.py:840} INFO - DAG(s) '00_hello_anidata' retrieved from /opt/airflow/dags/00_hello_anidata.py
+[2026-04-27T12:13:32.737+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:32.737+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:13:32.762+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:13:32.761+0000] {dag.py:3823} INFO - Setting next_dagrun for 00_hello_anidata to None, run_after=None
+[2026-04-27T12:13:32.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/00_hello_anidata.py took 0.162 seconds
