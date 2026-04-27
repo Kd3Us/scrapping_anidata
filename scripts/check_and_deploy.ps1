@@ -117,3 +117,4 @@ if ($UseNewCompose) {
 
 Save-Deployment -DeployedSha $headSha
 Write-Log "Deploiement OK - SHA: $headSha"
+exit 0
