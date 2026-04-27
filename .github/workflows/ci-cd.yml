@@ -89,3 +89,17 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+  deploy:
+    name: Deploy (self-hosted)
+    needs: [build-and-push]
+    runs-on: self-hosted
+    if: github.event_name != 'pull_request'
+    steps:
+      - name: Deployer la nouvelle image
+        shell: pwsh
+        env:
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          $script = Join-Path $env:ANIDATA_PROJECT_DIR "scripts\check_and_deploy.ps1"
+          & $script -Sha $env:COMMIT_SHA
