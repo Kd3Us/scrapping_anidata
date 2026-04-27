@@ -53,6 +53,9 @@ def load_to_elasticsearch(**context):
 
     success, errors = helpers.bulk(es, actions, raise_on_error=False)
     print(f"Indexés : {success} | Erreurs : {len(errors)}")
+    if errors:
+        for err in errors:
+            print(f"  -> {err}")
 
 
 with DAG(
