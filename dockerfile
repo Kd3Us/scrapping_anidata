@@ -1,4 +1,4 @@
-FROM apache/airflow:2.9.2
+FROM apache/airflow:2.9.
 USER root
 RUN mkdir -p /opt/airflow/data/raw
 USER airflow
