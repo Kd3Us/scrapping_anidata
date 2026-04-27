@@ -37348,3 +37348,489 @@ File Path                                     PID    Runtime      # DAGs    # Er
 /opt/airflow/dags/etl_dag.py                                           1           0  0.35s           2026-04-27T11:55:13
 /opt/airflow/dags/scrapper_dag.py                                      1           0  0.43s           2026-04-27T11:55:23
 ================================================================================
+[2026-04-27T11:56:12.039+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.29s           2026-04-27T11:55:53
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T11:55:44
+/opt/airflow/dags/01_extract_anime.py                                  1           0  1.01s           2026-04-27T11:55:56
+/opt/airflow/dags/02_transform_anime.py                                1           0  1.00s           2026-04-27T11:55:54
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.12s           2026-04-27T11:55:44
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.98s           2026-04-27T11:55:55
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T11:55:43
+/opt/airflow/dags/etl_dag.py                                           1           0  0.36s           2026-04-27T11:55:43
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.41s           2026-04-27T11:55:54
+================================================================================
+[2026-04-27T11:56:42.146+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T11:56:24
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.23s           2026-04-27T11:56:14
+/opt/airflow/dags/01_extract_anime.py                                  1           0  1.03s           2026-04-27T11:56:27
+/opt/airflow/dags/02_transform_anime.py                                1           0  1.31s           2026-04-27T11:56:26
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.08s           2026-04-27T11:56:15
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  1.18s           2026-04-27T11:56:27
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T11:56:14
+/opt/airflow/dags/etl_dag.py                                           1           0  0.36s           2026-04-27T11:56:14
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.56s           2026-04-27T11:56:26
+================================================================================
+[2026-04-27T11:57:12.240+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.27s           2026-04-27T11:56:55
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.24s           2026-04-27T11:56:45
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.96s           2026-04-27T11:56:58
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.99s           2026-04-27T11:56:57
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.08s           2026-04-27T11:56:46
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.96s           2026-04-27T11:56:58
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T11:56:45
+/opt/airflow/dags/etl_dag.py                                           1           0  0.33s           2026-04-27T11:56:44
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.41s           2026-04-27T11:56:56
+================================================================================
+[2026-04-27T11:57:42.456+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.30s           2026-04-27T11:57:26
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T11:57:15
+/opt/airflow/dags/01_extract_anime.py                                  1           0  1.04s           2026-04-27T11:57:31
+/opt/airflow/dags/02_transform_anime.py                                1           0  2.03s           2026-04-27T11:57:30
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.07s           2026-04-27T11:57:17
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  1.87s           2026-04-27T11:57:31
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.23s           2026-04-27T11:57:15
+/opt/airflow/dags/etl_dag.py                                           1           0  0.39s           2026-04-27T11:57:15
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.41s           2026-04-27T11:57:27
+================================================================================
+[2026-04-27T11:58:12.751+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.27s           2026-04-27T11:57:56
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T11:57:46
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.96s           2026-04-27T11:58:02
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.95s           2026-04-27T11:58:01
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.10s           2026-04-27T11:57:49
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.94s           2026-04-27T11:58:02
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T11:57:46
+/opt/airflow/dags/etl_dag.py                                           1           0  0.34s           2026-04-27T11:57:45
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T11:57:58
+================================================================================
+[2026-04-27T11:58:43.320+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.27s           2026-04-27T11:58:27
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T11:58:16
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.96s           2026-04-27T11:58:34
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.96s           2026-04-27T11:58:33
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.07s           2026-04-27T11:58:20
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.96s           2026-04-27T11:58:34
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.21s           2026-04-27T11:58:16
+/opt/airflow/dags/etl_dag.py                                           1           0  0.33s           2026-04-27T11:58:16
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.39s           2026-04-27T11:58:29
+================================================================================
+[2026-04-27T11:59:03.980+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-04-27T11:59:04.188+0000] {manager.py:741} INFO - There are 9 files in /opt/airflow/dags
+[2026-04-27T11:59:13.631+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T11:58:57
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.20s           2026-04-27T11:58:47
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.94s           2026-04-27T11:59:05
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.92s           2026-04-27T11:59:04
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.12s           2026-04-27T11:58:52
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.92s           2026-04-27T11:59:05
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.20s           2026-04-27T11:58:47
+/opt/airflow/dags/etl_dag.py                                           1           0  0.33s           2026-04-27T11:58:47
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T11:58:59
+================================================================================
+[2026-04-27T11:59:43.946+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T11:59:27
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.20s           2026-04-27T11:59:18
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.93s           2026-04-27T11:59:36
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.92s           2026-04-27T11:59:35
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.03s           2026-04-27T11:59:23
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.93s           2026-04-27T11:59:36
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T11:59:17
+/opt/airflow/dags/etl_dag.py                                           1           0  0.33s           2026-04-27T11:59:18
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.41s           2026-04-27T11:59:30
+================================================================================
+[2026-04-27T12:00:14.341+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T11:59:58
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T11:59:48
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.93s           2026-04-27T12:00:08
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.92s           2026-04-27T12:00:07
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.10s           2026-04-27T11:59:54
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.94s           2026-04-27T12:00:08
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T11:59:48
+/opt/airflow/dags/etl_dag.py                                           1           0  0.34s           2026-04-27T11:59:48
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.43s           2026-04-27T12:00:01
+================================================================================
+[2026-04-27T12:00:44.728+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.29s           2026-04-27T12:00:28
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:00:18
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.94s           2026-04-27T12:00:39
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.92s           2026-04-27T12:00:38
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.04s           2026-04-27T12:00:26
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.93s           2026-04-27T12:00:39
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:00:18
+/opt/airflow/dags/etl_dag.py                                           1           0  0.33s           2026-04-27T12:00:19
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:00:32
+================================================================================
+[2026-04-27T12:01:15.133+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T12:00:58
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T12:00:49
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.97s           2026-04-27T12:01:11
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.94s           2026-04-27T12:01:10
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.03s           2026-04-27T12:00:57
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.95s           2026-04-27T12:01:11
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.21s           2026-04-27T12:00:49
+/opt/airflow/dags/etl_dag.py                                           1           0  0.35s           2026-04-27T12:00:49
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.41s           2026-04-27T12:01:03
+================================================================================
+[2026-04-27T12:01:45.450+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.27s           2026-04-27T12:01:29
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:01:19
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.93s           2026-04-27T12:01:42
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.91s           2026-04-27T12:01:41
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.06s           2026-04-27T12:01:28
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.92s           2026-04-27T12:01:42
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.20s           2026-04-27T12:01:19
+/opt/airflow/dags/etl_dag.py                                           1           0  0.34s           2026-04-27T12:01:20
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.41s           2026-04-27T12:01:34
+================================================================================
+[2026-04-27T12:02:15.873+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.27s           2026-04-27T12:01:59
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T12:01:50
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.95s           2026-04-27T12:02:13
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.93s           2026-04-27T12:02:12
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.01s           2026-04-27T12:02:00
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.95s           2026-04-27T12:02:13
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:01:49
+/opt/airflow/dags/etl_dag.py                                           1           0  0.33s           2026-04-27T12:01:51
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.39s           2026-04-27T12:02:05
+================================================================================
+[2026-04-27T12:02:46.180+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T12:02:29
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.24s           2026-04-27T12:02:20
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.96s           2026-04-27T12:02:45
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.95s           2026-04-27T12:02:44
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.06s           2026-04-27T12:02:31
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.96s           2026-04-27T12:02:45
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.23s           2026-04-27T12:02:20
+/opt/airflow/dags/etl_dag.py                                           1           0  0.35s           2026-04-27T12:02:21
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:02:36
+================================================================================
+[2026-04-27T12:03:16.735+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.29s           2026-04-27T12:03:00
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.23s           2026-04-27T12:02:50
+/opt/airflow/dags/01_extract_anime.py         18007  0.99s             1           0  0.96s           2026-04-27T12:02:45
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.94s           2026-04-27T12:03:15
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.07s           2026-04-27T12:03:03
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  1.00s           2026-04-27T12:03:16
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.23s           2026-04-27T12:02:50
+/opt/airflow/dags/etl_dag.py                                           1           0  0.34s           2026-04-27T12:02:52
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:03:06
+================================================================================
+[2026-04-27T12:03:47.158+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.30s           2026-04-27T12:03:31
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:03:21
+/opt/airflow/dags/01_extract_anime.py         18056  0.01s             1           0  1.00s           2026-04-27T12:03:16
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.89s           2026-04-27T12:03:47
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.04s           2026-04-27T12:03:34
+/opt/airflow/dags/04_anomaly_detector.py      18053  0.04s             1           0  1.00s           2026-04-27T12:03:16
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:03:21
+/opt/airflow/dags/etl_dag.py                                           1           0  0.64s           2026-04-27T12:03:23
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.39s           2026-04-27T12:03:38
+================================================================================
+[2026-04-27T12:04:04.885+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-04-27T12:04:05.108+0000] {manager.py:741} INFO - There are 9 files in /opt/airflow/dags
+[2026-04-27T12:04:17.511+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T12:04:01
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:03:51
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.98s           2026-04-27T12:03:48
+/opt/airflow/dags/02_transform_anime.py       18096  0.01s             1           0  0.89s           2026-04-27T12:03:47
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.06s           2026-04-27T12:04:06
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.97s           2026-04-27T12:03:48
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.21s           2026-04-27T12:03:51
+/opt/airflow/dags/etl_dag.py                                           1           0  0.35s           2026-04-27T12:03:54
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:04:09
+================================================================================
+[2026-04-27T12:04:47.713+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.29s           2026-04-27T12:04:32
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:04:21
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.95s           2026-04-27T12:04:19
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.93s           2026-04-27T12:04:18
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.08s           2026-04-27T12:04:37
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.95s           2026-04-27T12:04:19
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:04:21
+/opt/airflow/dags/etl_dag.py                                           1           0  0.57s           2026-04-27T12:04:25
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.42s           2026-04-27T12:04:40
+================================================================================
+[2026-04-27T12:05:17.818+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.29s           2026-04-27T12:05:02
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:04:51
+/opt/airflow/dags/01_extract_anime.py                                  1           0  1.00s           2026-04-27T12:04:50
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.93s           2026-04-27T12:04:49
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.03s           2026-04-27T12:05:08
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  1.00s           2026-04-27T12:04:50
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:04:51
+/opt/airflow/dags/etl_dag.py                                           1           0  0.35s           2026-04-27T12:04:56
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.51s           2026-04-27T12:05:12
+================================================================================
+[2026-04-27T12:05:48.216+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.27s           2026-04-27T12:05:33
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.23s           2026-04-27T12:05:22
+/opt/airflow/dags/01_extract_anime.py                                  1           0  1.09s           2026-04-27T12:05:22
+/opt/airflow/dags/02_transform_anime.py                                1           0  1.30s           2026-04-27T12:05:21
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.06s           2026-04-27T12:05:39
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  1.13s           2026-04-27T12:05:22
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:05:22
+/opt/airflow/dags/etl_dag.py                                           1           0  0.60s           2026-04-27T12:05:27
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.43s           2026-04-27T12:05:43
+================================================================================
+[2026-04-27T12:06:18.758+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.29s           2026-04-27T12:06:03
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.27s           2026-04-27T12:05:53
+/opt/airflow/dags/01_extract_anime.py                                  1           0  1.00s           2026-04-27T12:05:53
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.94s           2026-04-27T12:05:52
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.03s           2026-04-27T12:06:11
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.94s           2026-04-27T12:05:53
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:05:52
+/opt/airflow/dags/etl_dag.py                                           1           0  0.36s           2026-04-27T12:05:57
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:06:14
+================================================================================
+[2026-04-27T12:06:49.267+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T12:06:33
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T12:06:24
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.95s           2026-04-27T12:06:25
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.97s           2026-04-27T12:06:23
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.05s           2026-04-27T12:06:43
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.95s           2026-04-27T12:06:24
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.23s           2026-04-27T12:06:23
+/opt/airflow/dags/etl_dag.py                                           1           0  0.58s           2026-04-27T12:06:28
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:06:44
+================================================================================
+[2026-04-27T12:07:19.947+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T12:07:04
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T12:06:55
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.97s           2026-04-27T12:06:56
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.95s           2026-04-27T12:06:54
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.05s           2026-04-27T12:07:14
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.94s           2026-04-27T12:06:55
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.24s           2026-04-27T12:06:53
+/opt/airflow/dags/etl_dag.py                                           1           0  0.34s           2026-04-27T12:06:59
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.41s           2026-04-27T12:07:14
+================================================================================
+[2026-04-27T12:07:50.318+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T12:07:34
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T12:07:25
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.95s           2026-04-27T12:07:27
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.95s           2026-04-27T12:07:26
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.03s           2026-04-27T12:07:46
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.94s           2026-04-27T12:07:27
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.23s           2026-04-27T12:07:24
+/opt/airflow/dags/etl_dag.py                                           1           0  0.57s           2026-04-27T12:07:29
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:07:45
+================================================================================
+[2026-04-27T12:08:20.900+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.29s           2026-04-27T12:08:05
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.22s           2026-04-27T12:07:55
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.96s           2026-04-27T12:07:58
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.92s           2026-04-27T12:07:57
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.04s           2026-04-27T12:08:17
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.97s           2026-04-27T12:07:58
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.24s           2026-04-27T12:07:54
+/opt/airflow/dags/etl_dag.py                                           1           0  0.36s           2026-04-27T12:08:00
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:08:16
+================================================================================
+[2026-04-27T12:08:50.973+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T12:08:36
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:08:26
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.95s           2026-04-27T12:08:30
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.90s           2026-04-27T12:08:29
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.03s           2026-04-27T12:08:48
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.95s           2026-04-27T12:08:30
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:08:25
+/opt/airflow/dags/etl_dag.py                                           1           0  0.56s           2026-04-27T12:08:31
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.40s           2026-04-27T12:08:46
+================================================================================
+[2026-04-27T12:09:05.376+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2026-04-27T12:09:05.606+0000] {manager.py:741} INFO - There are 9 files in /opt/airflow/dags
+[2026-04-27T12:09:21.343+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.28s           2026-04-27T12:09:06
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.23s           2026-04-27T12:08:56
+/opt/airflow/dags/01_extract_anime.py                                  1           0  1.01s           2026-04-27T12:09:01
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.92s           2026-04-27T12:09:00
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.01s           2026-04-27T12:09:20
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.97s           2026-04-27T12:09:01
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.23s           2026-04-27T12:08:55
+/opt/airflow/dags/etl_dag.py                                           1           0  0.57s           2026-04-27T12:09:03
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.66s           2026-04-27T12:09:17
+================================================================================
+[2026-04-27T12:09:51.508+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.49s           2026-04-27T12:09:37
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:09:27
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.92s           2026-04-27T12:09:33
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.89s           2026-04-27T12:09:32
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.03s           2026-04-27T12:09:51
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.92s           2026-04-27T12:09:33
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.25s           2026-04-27T12:09:26
+/opt/airflow/dags/etl_dag.py                                           1           0  0.54s           2026-04-27T12:09:34
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.61s           2026-04-27T12:09:48
+================================================================================
+[2026-04-27T12:10:21.781+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.29s           2026-04-27T12:10:08
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:09:57
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.87s           2026-04-27T12:10:04
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.92s           2026-04-27T12:10:03
+/opt/airflow/dags/03_load_anime.py            18678  0.01s             1           0  1.03s           2026-04-27T12:09:51
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.93s           2026-04-27T12:10:04
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:09:56
+/opt/airflow/dags/etl_dag.py                                           1           0  0.56s           2026-04-27T12:10:05
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.67s           2026-04-27T12:10:19
+================================================================================
+[2026-04-27T12:10:51.963+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/anidata_scraper/scraper.py                           0           0  0.50s           2026-04-27T12:10:39
+/opt/airflow/dags/00_hello_anidata.py                                  1           0  0.21s           2026-04-27T12:10:28
+/opt/airflow/dags/01_extract_anime.py                                  1           0  0.89s           2026-04-27T12:10:36
+/opt/airflow/dags/02_transform_anime.py                                1           0  0.92s           2026-04-27T12:10:35
+/opt/airflow/dags/03_load_anime.py                                     1           0  1.01s           2026-04-27T12:10:22
+/opt/airflow/dags/04_anomaly_detector.py                               1           0  0.94s           2026-04-27T12:10:35
+/opt/airflow/dags/05_full_pipeline.py                                  1           0  0.22s           2026-04-27T12:10:27
+/opt/airflow/dags/etl_dag.py                                           1           0  0.54s           2026-04-27T12:10:36
+/opt/airflow/dags/scrapper_dag.py                                      1           0  0.63s           2026-04-27T12:10:50
+================================================================================

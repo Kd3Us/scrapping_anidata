@@ -2984,3 +2984,206 @@
 [2026-04-27T11:55:54.558+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:55:54.558+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-04-27T11:55:54.580+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:55:54.580+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
 [2026-04-27T11:55:54.618+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.933 seconds
+[2026-04-27T11:56:25.538+0000] {processor.py:161} INFO - Started process (PID=17359) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:56:25.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T11:56:25.543+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:25.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:56:26.619+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:56:26.677+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:26.675+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:56:26.707+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:26.706+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T11:56:26.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 1.233 seconds
+[2026-04-27T11:56:57.042+0000] {processor.py:161} INFO - Started process (PID=17410) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:56:57.044+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T11:56:57.045+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:57.045+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:56:57.852+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:56:57.897+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:57.897+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:56:57.921+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:57.921+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T11:56:57.960+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.925 seconds
+[2026-04-27T11:57:28.265+0000] {processor.py:161} INFO - Started process (PID=17459) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:57:28.267+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T11:57:28.270+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:57:28.269+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:57:29.793+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:57:29.942+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:57:29.940+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:57:30.014+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:57:30.014+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T11:57:30.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 1.914 seconds
+[2026-04-27T11:58:00.668+0000] {processor.py:161} INFO - Started process (PID=17508) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:58:00.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T11:58:00.672+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:00.671+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:58:01.437+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:58:01.482+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:01.481+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:58:01.506+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:01.506+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T11:58:01.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.886 seconds
+[2026-04-27T11:58:32.225+0000] {processor.py:161} INFO - Started process (PID=17557) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:58:32.227+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T11:58:32.229+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:32.228+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:58:33.007+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:58:33.054+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:33.054+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:58:33.079+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:33.078+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T11:58:33.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.903 seconds
+[2026-04-27T11:59:03.627+0000] {processor.py:161} INFO - Started process (PID=17606) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:59:03.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T11:59:03.631+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:03.631+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:59:04.377+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:59:04.420+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:04.419+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:59:04.445+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:04.445+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T11:59:04.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.864 seconds
+[2026-04-27T11:59:34.960+0000] {processor.py:161} INFO - Started process (PID=17655) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:59:34.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T11:59:34.964+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:34.963+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:59:35.703+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T11:59:35.747+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:35.746+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:59:35.769+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:35.768+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T11:59:35.810+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.856 seconds
+[2026-04-27T12:00:06.362+0000] {processor.py:161} INFO - Started process (PID=17704) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:00:06.364+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:00:06.366+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:06.365+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:00:07.105+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:00:07.148+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:07.147+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:00:07.172+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:07.172+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:00:07.212+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.856 seconds
+[2026-04-27T12:00:37.761+0000] {processor.py:161} INFO - Started process (PID=17753) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:00:37.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:00:37.765+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:37.765+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:00:38.509+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:00:38.555+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:38.554+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:00:38.577+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:38.577+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:00:38.618+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.863 seconds
+[2026-04-27T12:01:09.160+0000] {processor.py:161} INFO - Started process (PID=17802) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:01:09.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:01:09.163+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:09.163+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:01:09.917+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:01:09.964+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:09.964+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:01:09.989+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:09.989+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:01:10.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.875 seconds
+[2026-04-27T12:01:40.557+0000] {processor.py:161} INFO - Started process (PID=17851) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:01:40.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:01:40.561+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:40.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:01:41.293+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:01:41.336+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:41.335+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:01:41.359+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:41.358+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:01:41.399+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.848 seconds
+[2026-04-27T12:02:11.886+0000] {processor.py:161} INFO - Started process (PID=17900) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:02:11.888+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:02:11.889+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:11.889+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:02:12.638+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:02:12.683+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:12.682+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:02:12.707+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:12.706+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:02:12.747+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.868 seconds
+[2026-04-27T12:02:43.197+0000] {processor.py:161} INFO - Started process (PID=17949) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:02:43.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:02:43.202+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:43.201+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:02:43.965+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:02:44.012+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:44.011+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:02:44.035+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:44.035+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:02:44.076+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.885 seconds
+[2026-04-27T12:03:14.786+0000] {processor.py:161} INFO - Started process (PID=17998) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:03:14.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:03:14.790+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:14.789+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:03:15.551+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:03:15.596+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:15.596+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:03:15.620+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:15.620+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:03:15.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.881 seconds
+[2026-04-27T12:03:46.239+0000] {processor.py:161} INFO - Started process (PID=18047) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:03:46.241+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:03:46.242+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:46.242+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:03:46.954+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:03:47.000+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:46.999+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:03:47.022+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:47.022+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:03:47.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.827 seconds
+[2026-04-27T12:04:17.539+0000] {processor.py:161} INFO - Started process (PID=18096) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:04:17.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:04:17.543+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:17.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:04:18.289+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:04:18.335+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:18.335+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:04:18.359+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:18.359+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:04:18.398+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.865 seconds
+[2026-04-27T12:04:48.794+0000] {processor.py:161} INFO - Started process (PID=18145) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:04:48.796+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:04:48.799+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:48.798+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:04:49.547+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:04:49.593+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:49.592+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:04:49.615+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:49.615+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:04:49.654+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.867 seconds
+[2026-04-27T12:05:19.918+0000] {processor.py:161} INFO - Started process (PID=18194) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:05:19.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:05:19.922+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:19.922+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:05:21.008+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:05:21.062+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:21.061+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:05:21.092+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:21.091+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:05:21.140+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 1.230 seconds
+[2026-04-27T12:05:51.329+0000] {processor.py:161} INFO - Started process (PID=18243) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:05:51.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:05:51.334+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:51.334+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:05:52.097+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:05:52.140+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:52.138+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:05:52.162+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:52.162+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:05:52.199+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.877 seconds
+[2026-04-27T12:06:22.893+0000] {processor.py:161} INFO - Started process (PID=18292) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:06:22.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:06:22.897+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:22.896+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:06:23.687+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:06:23.731+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:23.730+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:06:23.754+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:23.754+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:06:23.792+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.905 seconds
+[2026-04-27T12:06:54.065+0000] {processor.py:161} INFO - Started process (PID=18346) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:06:54.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:06:54.069+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:54.069+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:06:54.828+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:06:54.873+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:54.872+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:06:54.895+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:54.895+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:06:54.941+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.882 seconds
+[2026-04-27T12:07:25.284+0000] {processor.py:161} INFO - Started process (PID=18395) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:07:25.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:07:25.288+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:25.287+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:07:26.049+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:07:26.091+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:26.090+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:07:26.115+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:26.115+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:07:26.157+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.880 seconds
+[2026-04-27T12:07:56.785+0000] {processor.py:161} INFO - Started process (PID=18449) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:07:56.787+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:07:56.789+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:56.788+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:07:57.523+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:07:57.570+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:57.569+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:07:57.592+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:57.592+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:07:57.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.859 seconds
+[2026-04-27T12:08:28.345+0000] {processor.py:161} INFO - Started process (PID=18498) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:08:28.347+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:08:28.349+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:28.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:08:29.078+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:08:29.120+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:29.119+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:08:29.141+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:29.140+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:08:29.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.836 seconds
+[2026-04-27T12:08:59.826+0000] {processor.py:161} INFO - Started process (PID=18547) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:08:59.828+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:08:59.830+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:59.830+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:09:00.569+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:09:00.615+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:00.614+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:09:00.640+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:00.639+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:09:00.678+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.859 seconds
+[2026-04-27T12:09:31.204+0000] {processor.py:161} INFO - Started process (PID=18596) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:09:31.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:09:31.208+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:31.207+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:09:31.923+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:09:31.968+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:31.967+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:09:31.989+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:31.989+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:09:32.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.829 seconds
+[2026-04-27T12:10:03.041+0000] {processor.py:161} INFO - Started process (PID=18645) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:10:03.043+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:10:03.045+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:03.044+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:10:03.791+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:10:03.838+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:03.837+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:10:03.860+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:03.860+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:10:03.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.864 seconds
+[2026-04-27T12:10:34.324+0000] {processor.py:161} INFO - Started process (PID=18694) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:10:34.326+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:10:34.328+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:34.327+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:10:35.080+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:10:35.125+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:35.125+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:10:35.147+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:35.147+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:10:35.184+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.865 seconds
+[2026-04-27T12:11:05.596+0000] {processor.py:161} INFO - Started process (PID=18743) to work on /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:11:05.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/02_transform_anime.py for tasks to queue
+[2026-04-27T12:11:05.600+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:05.599+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:11:06.377+0000] {processor.py:840} INFO - DAG(s) '02_transform_anime' retrieved from /opt/airflow/dags/02_transform_anime.py
+[2026-04-27T12:11:06.423+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:06.422+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:11:06.444+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:06.444+0000] {dag.py:3823} INFO - Setting next_dagrun for 02_transform_anime to None, run_after=None
+[2026-04-27T12:11:06.482+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/02_transform_anime.py took 0.893 seconds

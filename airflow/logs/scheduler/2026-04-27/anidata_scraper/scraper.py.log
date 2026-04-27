@@ -2103,3 +2103,153 @@
 [2026-04-27T11:55:53.376+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:55:53.375+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
 [2026-04-27T11:55:53.564+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
 [2026-04-27T11:55:53.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.233 seconds
+[2026-04-27T11:56:24.274+0000] {processor.py:161} INFO - Started process (PID=17351) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:56:24.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T11:56:24.278+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:24.277+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:56:24.459+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:56:24.492+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.224 seconds
+[2026-04-27T11:56:55.538+0000] {processor.py:161} INFO - Started process (PID=17400) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:56:55.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T11:56:55.543+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:55.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:56:55.716+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:56:55.750+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.217 seconds
+[2026-04-27T11:57:25.871+0000] {processor.py:161} INFO - Started process (PID=17449) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:57:25.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T11:57:25.875+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:57:25.874+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:57:26.068+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:57:26.105+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.240 seconds
+[2026-04-27T11:57:56.284+0000] {processor.py:161} INFO - Started process (PID=17498) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:57:56.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T11:57:56.288+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:57:56.288+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:57:56.464+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:57:56.495+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.218 seconds
+[2026-04-27T11:58:26.832+0000] {processor.py:161} INFO - Started process (PID=17547) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:58:26.834+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T11:58:26.836+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:26.836+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:58:27.012+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:58:27.045+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.218 seconds
+[2026-04-27T11:58:57.181+0000] {processor.py:161} INFO - Started process (PID=17596) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:58:57.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T11:58:57.186+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:57.185+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:58:57.362+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:58:57.397+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.223 seconds
+[2026-04-27T11:59:27.525+0000] {processor.py:161} INFO - Started process (PID=17645) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:59:27.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T11:59:27.529+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:27.528+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:59:27.704+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:59:27.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.218 seconds
+[2026-04-27T11:59:57.860+0000] {processor.py:161} INFO - Started process (PID=17694) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:59:57.862+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T11:59:57.864+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:57.863+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:59:58.042+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T11:59:58.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.221 seconds
+[2026-04-27T12:00:28.263+0000] {processor.py:161} INFO - Started process (PID=17743) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:00:28.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:00:28.268+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:28.267+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:00:28.457+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:00:28.491+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.234 seconds
+[2026-04-27T12:00:58.633+0000] {processor.py:161} INFO - Started process (PID=17792) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:00:58.635+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:00:58.637+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:58.636+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:00:58.820+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:00:58.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.224 seconds
+[2026-04-27T12:01:29.032+0000] {processor.py:161} INFO - Started process (PID=17841) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:01:29.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:01:29.036+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:29.035+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:01:29.205+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:01:29.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.214 seconds
+[2026-04-27T12:01:59.337+0000] {processor.py:161} INFO - Started process (PID=17884) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:01:59.339+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:01:59.341+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:59.341+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:01:59.511+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:01:59.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.213 seconds
+[2026-04-27T12:02:29.757+0000] {processor.py:161} INFO - Started process (PID=17933) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:02:29.759+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:02:29.761+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:29.760+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:02:29.939+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:02:29.972+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.221 seconds
+[2026-04-27T12:03:00.425+0000] {processor.py:161} INFO - Started process (PID=17982) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:03:00.427+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:03:00.429+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:00.428+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:03:00.616+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:03:00.651+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.232 seconds
+[2026-04-27T12:03:30.847+0000] {processor.py:161} INFO - Started process (PID=18031) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:03:30.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:03:30.851+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:30.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:03:31.028+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:03:31.062+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.221 seconds
+[2026-04-27T12:04:01.692+0000] {processor.py:161} INFO - Started process (PID=18080) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:04:01.695+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:04:01.697+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:01.696+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:04:01.876+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:04:01.907+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.222 seconds
+[2026-04-27T12:04:32.010+0000] {processor.py:161} INFO - Started process (PID=18129) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:04:32.012+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:04:32.013+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:32.013+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:04:32.196+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:04:32.229+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.226 seconds
+[2026-04-27T12:05:02.460+0000] {processor.py:161} INFO - Started process (PID=18178) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:05:02.462+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:05:02.464+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:02.464+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:05:02.644+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:05:02.683+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.229 seconds
+[2026-04-27T12:05:32.820+0000] {processor.py:161} INFO - Started process (PID=18227) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:05:32.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:05:32.824+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:32.824+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:05:32.999+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:05:33.034+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.220 seconds
+[2026-04-27T12:06:03.133+0000] {processor.py:161} INFO - Started process (PID=18276) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:06:03.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:06:03.137+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:03.136+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:06:03.324+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:06:03.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.232 seconds
+[2026-04-27T12:06:33.733+0000] {processor.py:161} INFO - Started process (PID=18325) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:06:33.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:06:33.737+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:33.737+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:06:33.913+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:06:33.945+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.219 seconds
+[2026-04-27T12:07:04.355+0000] {processor.py:161} INFO - Started process (PID=18374) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:07:04.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:07:04.359+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:04.358+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:07:04.533+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:07:04.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.218 seconds
+[2026-04-27T12:07:34.701+0000] {processor.py:161} INFO - Started process (PID=18423) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:07:34.703+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:07:34.705+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:34.704+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:07:34.882+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:07:34.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.222 seconds
+[2026-04-27T12:08:05.237+0000] {processor.py:161} INFO - Started process (PID=18472) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:08:05.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:08:05.241+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:05.241+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:08:05.426+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:08:05.460+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.230 seconds
+[2026-04-27T12:08:35.959+0000] {processor.py:161} INFO - Started process (PID=18521) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:08:35.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:08:35.964+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:35.963+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:08:36.137+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:08:36.171+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.218 seconds
+[2026-04-27T12:09:06.733+0000] {processor.py:161} INFO - Started process (PID=18570) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:09:06.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:09:06.736+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:06.736+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:09:06.918+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:09:06.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.225 seconds
+[2026-04-27T12:09:37.197+0000] {processor.py:161} INFO - Started process (PID=18619) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:09:37.199+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:09:37.200+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:37.200+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:09:37.592+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:09:37.620+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.430 seconds
+[2026-04-27T12:10:08.183+0000] {processor.py:161} INFO - Started process (PID=18668) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:10:08.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:10:08.187+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:08.186+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:10:08.371+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:10:08.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.230 seconds
+[2026-04-27T12:10:39.200+0000] {processor.py:161} INFO - Started process (PID=18717) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:10:39.202+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:10:39.203+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:39.203+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:10:39.605+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:10:39.631+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.439 seconds
+[2026-04-27T12:11:09.797+0000] {processor.py:161} INFO - Started process (PID=18766) to work on /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:11:09.800+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/anidata_scraper/scraper.py for tasks to queue
+[2026-04-27T12:11:09.801+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:09.801+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:11:10.374+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/anidata_scraper/scraper.py
+[2026-04-27T12:11:10.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/anidata_scraper/scraper.py took 0.610 seconds

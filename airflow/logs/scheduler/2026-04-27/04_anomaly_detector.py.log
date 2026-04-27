@@ -2984,3 +2984,206 @@
 [2026-04-27T11:55:55.562+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:55:55.561+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2026-04-27T11:55:55.584+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:55:55.583+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
 [2026-04-27T11:55:55.630+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.920 seconds
+[2026-04-27T11:56:26.130+0000] {processor.py:161} INFO - Started process (PID=17365) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:56:26.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T11:56:26.136+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:26.134+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:56:27.110+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:56:27.159+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:27.157+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:56:27.185+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:27.185+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T11:56:27.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 1.110 seconds
+[2026-04-27T11:56:57.884+0000] {processor.py:161} INFO - Started process (PID=17414) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:56:57.886+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T11:56:57.888+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:57.888+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:56:58.676+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:56:58.719+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:58.718+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:56:58.745+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:56:58.744+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T11:56:58.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.906 seconds
+[2026-04-27T11:57:29.410+0000] {processor.py:161} INFO - Started process (PID=17463) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:57:29.418+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T11:57:29.422+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:57:29.420+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:57:31.090+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:57:31.135+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:57:31.134+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:57:31.157+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:57:31.157+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T11:57:31.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 1.800 seconds
+[2026-04-27T11:58:01.650+0000] {processor.py:161} INFO - Started process (PID=17514) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:58:01.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T11:58:01.654+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:01.653+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:58:02.415+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:58:02.455+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:02.454+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:58:02.481+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:02.481+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T11:58:02.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.874 seconds
+[2026-04-27T11:58:33.216+0000] {processor.py:161} INFO - Started process (PID=17563) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:58:33.218+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T11:58:33.219+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:33.219+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:58:34.003+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:58:34.048+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:34.046+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:58:34.070+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:58:34.069+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T11:58:34.108+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.899 seconds
+[2026-04-27T11:59:04.278+0000] {processor.py:161} INFO - Started process (PID=17610) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:59:04.281+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T11:59:04.283+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:04.282+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:59:05.032+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:59:05.072+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:05.071+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:59:05.094+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:05.094+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T11:59:05.131+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.861 seconds
+[2026-04-27T11:59:35.901+0000] {processor.py:161} INFO - Started process (PID=17661) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:59:35.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T11:59:35.904+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:35.904+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:59:36.667+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T11:59:36.708+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:36.707+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T11:59:36.730+0000] {logging_mixin.py:188} INFO - [2026-04-27T11:59:36.730+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T11:59:36.766+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.872 seconds
+[2026-04-27T12:00:07.309+0000] {processor.py:161} INFO - Started process (PID=17710) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:00:07.312+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:00:07.314+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:07.313+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:00:08.077+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:00:08.120+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:08.119+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:00:08.145+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:08.145+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:00:08.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.878 seconds
+[2026-04-27T12:00:38.715+0000] {processor.py:161} INFO - Started process (PID=17759) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:00:38.717+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:00:38.719+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:38.718+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:00:39.477+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:00:39.519+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:39.518+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:00:39.541+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:00:39.540+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:00:39.583+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.874 seconds
+[2026-04-27T12:01:10.130+0000] {processor.py:161} INFO - Started process (PID=17808) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:01:10.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:01:10.134+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:10.133+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:01:10.900+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:01:10.944+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:10.943+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:01:10.969+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:10.968+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:01:11.007+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.884 seconds
+[2026-04-27T12:01:41.493+0000] {processor.py:161} INFO - Started process (PID=17857) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:01:41.495+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:01:41.497+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:41.497+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:01:42.248+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:01:42.290+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:42.289+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:01:42.312+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:01:42.311+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:01:42.351+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.863 seconds
+[2026-04-27T12:02:12.846+0000] {processor.py:161} INFO - Started process (PID=17906) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:02:12.848+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:02:12.850+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:12.850+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:02:13.629+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:02:13.671+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:13.670+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:02:13.694+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:13.694+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:02:13.731+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.891 seconds
+[2026-04-27T12:02:44.182+0000] {processor.py:161} INFO - Started process (PID=17955) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:02:44.184+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:02:44.185+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:44.185+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:02:44.967+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:02:45.011+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:45.010+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:02:45.033+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:02:45.033+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:02:45.073+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.897 seconds
+[2026-04-27T12:03:15.758+0000] {processor.py:161} INFO - Started process (PID=18004) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:03:15.760+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:03:15.762+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:15.761+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:03:16.583+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:03:16.629+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:16.628+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:03:16.652+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:16.652+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:03:16.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.890 seconds
+[2026-04-27T12:03:47.162+0000] {processor.py:161} INFO - Started process (PID=18053) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:03:47.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:03:47.166+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:47.165+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:03:47.961+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:03:48.005+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:48.004+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:03:48.027+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:03:48.027+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:03:48.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.911 seconds
+[2026-04-27T12:04:18.502+0000] {processor.py:161} INFO - Started process (PID=18102) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:04:18.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:04:18.505+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:18.505+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:04:19.274+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:04:19.318+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:19.317+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:04:19.342+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:19.342+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:04:19.384+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.889 seconds
+[2026-04-27T12:04:49.749+0000] {processor.py:161} INFO - Started process (PID=18151) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:04:49.751+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:04:49.753+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:49.752+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:04:50.561+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:04:50.611+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:50.610+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:04:50.638+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:04:50.637+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:04:50.681+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.939 seconds
+[2026-04-27T12:05:20.980+0000] {processor.py:161} INFO - Started process (PID=18198) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:05:20.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:05:20.985+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:20.984+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:05:21.928+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:05:21.978+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:21.977+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:05:22.001+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:22.000+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:05:22.038+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 1.065 seconds
+[2026-04-27T12:05:52.300+0000] {processor.py:161} INFO - Started process (PID=18249) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:05:52.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:05:52.304+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:52.303+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:05:53.068+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:05:53.109+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:53.108+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:05:53.130+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:05:53.130+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:05:53.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.880 seconds
+[2026-04-27T12:06:23.550+0000] {processor.py:161} INFO - Started process (PID=18301) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:06:23.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:06:23.554+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:23.553+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:06:24.329+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:06:24.371+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:24.371+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:06:24.394+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:24.394+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:06:24.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.894 seconds
+[2026-04-27T12:06:54.834+0000] {processor.py:161} INFO - Started process (PID=18350) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:06:54.837+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:06:54.839+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:54.838+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:06:55.596+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:06:55.640+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:55.639+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:06:55.663+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:06:55.663+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:06:55.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.878 seconds
+[2026-04-27T12:07:26.260+0000] {processor.py:161} INFO - Started process (PID=18406) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:07:26.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:07:26.264+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:26.264+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:07:27.024+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:07:27.069+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:27.068+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:07:27.093+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:27.092+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:07:27.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.875 seconds
+[2026-04-27T12:07:57.739+0000] {processor.py:161} INFO - Started process (PID=18455) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:07:57.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:07:57.742+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:57.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:07:58.530+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:07:58.575+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:58.574+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:07:58.599+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:07:58.598+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:07:58.638+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.906 seconds
+[2026-04-27T12:08:29.277+0000] {processor.py:161} INFO - Started process (PID=18504) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:08:29.279+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:08:29.281+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:29.281+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:08:30.054+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:08:30.097+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:30.096+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:08:30.119+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:08:30.118+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:08:30.158+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.887 seconds
+[2026-04-27T12:09:00.789+0000] {processor.py:161} INFO - Started process (PID=18553) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:09:00.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:09:00.794+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:00.794+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:09:01.572+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:09:01.617+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:01.616+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:09:01.641+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:01.641+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:09:01.683+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.900 seconds
+[2026-04-27T12:09:32.125+0000] {processor.py:161} INFO - Started process (PID=18602) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:09:32.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:09:32.129+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:32.128+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:09:32.883+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:09:32.926+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:32.925+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:09:32.947+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:09:32.946+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:09:32.984+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.865 seconds
+[2026-04-27T12:10:03.125+0000] {processor.py:161} INFO - Started process (PID=18648) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:10:03.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:10:03.129+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:03.128+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:10:03.905+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:10:03.946+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:03.944+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:10:03.966+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:03.966+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:10:04.001+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.883 seconds
+[2026-04-27T12:10:34.345+0000] {processor.py:161} INFO - Started process (PID=18697) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:10:34.347+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:10:34.348+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:34.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:10:35.121+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:10:35.166+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:35.165+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:10:35.188+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:10:35.187+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:10:35.224+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.885 seconds
+[2026-04-27T12:11:05.615+0000] {processor.py:161} INFO - Started process (PID=18746) to work on /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:11:05.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/04_anomaly_detector.py for tasks to queue
+[2026-04-27T12:11:05.618+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:05.618+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:11:06.400+0000] {processor.py:840} INFO - DAG(s) '04_anomaly_detector' retrieved from /opt/airflow/dags/04_anomaly_detector.py
+[2026-04-27T12:11:06.443+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:06.441+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-04-27T12:11:06.465+0000] {logging_mixin.py:188} INFO - [2026-04-27T12:11:06.465+0000] {dag.py:3823} INFO - Setting next_dagrun for 04_anomaly_detector to None, run_after=None
+[2026-04-27T12:11:06.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/04_anomaly_detector.py took 0.893 seconds
