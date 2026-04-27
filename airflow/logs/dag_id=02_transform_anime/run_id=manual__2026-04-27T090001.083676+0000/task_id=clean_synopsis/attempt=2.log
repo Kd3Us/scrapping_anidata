@@ -1,0 +1,33 @@
+[2026-04-27T09:02:03.608+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 02_transform_anime.clean_synopsis manual__2026-04-27T09:00:01.083676+00:00 [queued]>
+[2026-04-27T09:02:03.622+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 02_transform_anime.clean_synopsis manual__2026-04-27T09:00:01.083676+00:00 [queued]>
+[2026-04-27T09:02:03.623+0000] {taskinstance.py:2170} INFO - Starting attempt 2 of 3
+[2026-04-27T09:02:03.645+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): clean_synopsis> on 2026-04-27 09:00:01.083676+00:00
+[2026-04-27T09:02:03.655+0000] {standard_task_runner.py:60} INFO - Started process 629 to run task
+[2026-04-27T09:02:03.660+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '02_transform_anime', 'clean_synopsis', 'manual__2026-04-27T09:00:01.083676+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/02_transform_anime.py', '--cfg-path', '/tmp/tmpcem013ae']
+[2026-04-27T09:02:03.664+0000] {standard_task_runner.py:88} INFO - Job 72: Subtask clean_synopsis
+[2026-04-27T09:02:03.762+0000] {task_command.py:423} INFO - Running <TaskInstance: 02_transform_anime.clean_synopsis manual__2026-04-27T09:00:01.083676+00:00 [running]> on host 7a8516cd5613
+[2026-04-27T09:02:03.920+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='02_transform_anime' AIRFLOW_CTX_TASK_ID='clean_synopsis' AIRFLOW_CTX_EXECUTION_DATE='2026-04-27T09:00:01.083676+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-27T09:00:01.083676+00:00'
+[2026-04-27T09:02:03.923+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/02_transform_anime.py", line 28, in _clean_synopsis
+    result = clean_synopsis()
+             ^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/transform.py", line 40, in clean_synopsis
+    df = load_raw("synopsis")
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/transform.py", line 15, in load_raw
+    raise FileNotFoundError(f"Parquet introuvable : {path}. Avez-vous lancé le DAG Extract ?")
+FileNotFoundError: Parquet introuvable : /opt/***/data/raw_synopsis.parquet. Avez-vous lancé le DAG Extract ?
+[2026-04-27T09:02:03.951+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=02_transform_anime, task_id=clean_synopsis, execution_date=20260427T090001, start_date=20260427T090203, end_date=20260427T090203
+[2026-04-27T09:02:03.971+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 72 for task clean_synopsis (Parquet introuvable : /opt/***/data/raw_synopsis.parquet. Avez-vous lancé le DAG Extract ?; 629)
+[2026-04-27T09:02:03.994+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-27T09:02:04.040+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

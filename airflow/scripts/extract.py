@@ -2,6 +2,7 @@ import os
 import pandas as pd
 
 
+CSV_SOURCE = "/opt/airflow/data/raw"
 REP_SOURCE = "/opt/airflow/data"
 
 EXPECTED_SCHEMAS = {
@@ -28,7 +29,7 @@ EXPECTED_SCHEMAS = {
 # Charge un CSV et sauvegarde en parquet pour passage inter-tasks
 def extract_csv(dataset_key):
     schema = EXPECTED_SCHEMAS[dataset_key]
-    filepath = os.path.join(REP_SOURCE, schema["file"])
+    filepath = os.path.join(CSV_SOURCE, schema["file"])
 
     if not os.path.exists(filepath):
         raise FileNotFoundError(f"Fichier introuvable : {filepath}")

@@ -1,5 +1,6 @@
 import os
 import re
+import shutil
 import numpy as np
 import pandas as pd
 
@@ -204,8 +205,8 @@ def export_gold(versioned=False):
     latest_csv = os.path.join(REP_SOURCE, "anime_gold_latest.csv")
     latest_json = os.path.join(REP_SOURCE, "anime_gold_latest.json")
     for link, target in [(latest_csv, csv_path), (latest_json, json_path)]:
-        if os.path.islink(link) or os.path.exists(link):
+        if os.path.exists(link):
             os.remove(link)
-        os.symlink(target, link)
+        shutil.copy2(target, link)
 
     return {"version": v, "csv": csv_path, "json": json_path, "rows": len(df)}

@@ -1,0 +1,17 @@
+[2026-04-27T09:14:48.968+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 03_load_anime.create_index_mapping manual__2026-04-27T09:14:47.459565+00:00 [queued]>
+[2026-04-27T09:14:48.987+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 03_load_anime.create_index_mapping manual__2026-04-27T09:14:47.459565+00:00 [queued]>
+[2026-04-27T09:14:48.989+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-04-27T09:14:49.012+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): create_index_mapping> on 2026-04-27 09:14:47.459565+00:00
+[2026-04-27T09:14:49.025+0000] {standard_task_runner.py:60} INFO - Started process 1992 to run task
+[2026-04-27T09:14:49.030+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '03_load_anime', 'create_index_mapping', 'manual__2026-04-27T09:14:47.459565+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/03_load_anime.py', '--cfg-path', '/tmp/tmp8lsesk8z']
+[2026-04-27T09:14:49.034+0000] {standard_task_runner.py:88} INFO - Job 102: Subtask create_index_mapping
+[2026-04-27T09:14:49.141+0000] {task_command.py:423} INFO - Running <TaskInstance: 03_load_anime.create_index_mapping manual__2026-04-27T09:14:47.459565+00:00 [running]> on host 7a8516cd5613
+[2026-04-27T09:14:49.306+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='03_load_anime' AIRFLOW_CTX_TASK_ID='create_index_mapping' AIRFLOW_CTX_EXECUTION_DATE='2026-04-27T09:14:47.459565+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-27T09:14:47.459565+00:00'
+[2026-04-27T09:14:49.582+0000] {_transport.py:335} INFO - HEAD http://elasticsearch:9200/ [status:200 duration:0.009s]
+[2026-04-27T09:14:49.592+0000] {_transport.py:335} INFO - HEAD http://elasticsearch:9200/anime [status:404 duration:0.009s]
+[2026-04-27T09:14:50.461+0000] {_transport.py:335} INFO - PUT http://elasticsearch:9200/anime [status:200 duration:0.868s]
+[2026-04-27T09:14:50.463+0000] {logging_mixin.py:188} INFO - Index 'anime' : created
+[2026-04-27T09:14:50.464+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-04-27T09:14:50.491+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=03_load_anime, task_id=create_index_mapping, execution_date=20260427T091447, start_date=20260427T091448, end_date=20260427T091450
+[2026-04-27T09:14:50.571+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-27T09:14:50.637+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

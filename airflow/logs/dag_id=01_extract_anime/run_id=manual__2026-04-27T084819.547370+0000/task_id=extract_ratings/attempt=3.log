@@ -1,0 +1,30 @@
+[2026-04-27T08:53:49.930+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 01_extract_anime.extract_ratings manual__2026-04-27T08:48:19.547370+00:00 [queued]>
+[2026-04-27T08:53:49.944+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 01_extract_anime.extract_ratings manual__2026-04-27T08:48:19.547370+00:00 [queued]>
+[2026-04-27T08:53:49.945+0000] {taskinstance.py:2170} INFO - Starting attempt 3 of 3
+[2026-04-27T08:53:49.966+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_ratings> on 2026-04-27 08:48:19.547370+00:00
+[2026-04-27T08:53:49.976+0000] {standard_task_runner.py:60} INFO - Started process 3776 to run task
+[2026-04-27T08:53:49.981+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '01_extract_anime', 'extract_ratings', 'manual__2026-04-27T08:48:19.547370+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/01_extract_anime.py', '--cfg-path', '/tmp/tmpur_wo07r']
+[2026-04-27T08:53:49.986+0000] {standard_task_runner.py:88} INFO - Job 28: Subtask extract_ratings
+[2026-04-27T08:53:50.100+0000] {task_command.py:423} INFO - Running <TaskInstance: 01_extract_anime.extract_ratings manual__2026-04-27T08:48:19.547370+00:00 [running]> on host 7f080beffe36
+[2026-04-27T08:53:50.289+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='01_extract_anime' AIRFLOW_CTX_TASK_ID='extract_ratings' AIRFLOW_CTX_EXECUTION_DATE='2026-04-27T08:48:19.547370+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-27T08:48:19.547370+00:00'
+[2026-04-27T08:53:50.293+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/01_extract_anime.py", line 30, in _extract_ratings
+    result = extract_csv("ratings")
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/scripts/extract.py", line 34, in extract_csv
+    raise FileNotFoundError(f"Fichier introuvable : {filepath}")
+FileNotFoundError: Fichier introuvable : /opt/***/data/rating_complete.csv
+[2026-04-27T08:53:50.321+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=01_extract_anime, task_id=extract_ratings, execution_date=20260427T084819, start_date=20260427T085349, end_date=20260427T085350
+[2026-04-27T08:53:50.343+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 28 for task extract_ratings (Fichier introuvable : /opt/***/data/rating_complete.csv; 3776)
+[2026-04-27T08:53:50.359+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-04-27T08:53:50.403+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

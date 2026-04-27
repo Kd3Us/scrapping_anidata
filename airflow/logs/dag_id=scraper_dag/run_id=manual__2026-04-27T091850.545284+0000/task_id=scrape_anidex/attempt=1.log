@@ -1,0 +1,26 @@
+[2026-04-27T09:18:51.808+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: scraper_dag.scrape_anidex manual__2026-04-27T09:18:50.545284+00:00 [queued]>
+[2026-04-27T09:18:51.825+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: scraper_dag.scrape_anidex manual__2026-04-27T09:18:50.545284+00:00 [queued]>
+[2026-04-27T09:18:51.826+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2026-04-27T09:18:51.851+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): scrape_anidex> on 2026-04-27 09:18:50.545284+00:00
+[2026-04-27T09:18:51.863+0000] {standard_task_runner.py:60} INFO - Started process 2414 to run task
+[2026-04-27T09:18:51.868+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'scraper_dag', 'scrape_anidex', 'manual__2026-04-27T09:18:50.545284+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/scrapper_dag.py', '--cfg-path', '/tmp/tmpy84b7b5q']
+[2026-04-27T09:18:51.873+0000] {standard_task_runner.py:88} INFO - Job 111: Subtask scrape_anidex
+[2026-04-27T09:18:51.984+0000] {task_command.py:423} INFO - Running <TaskInstance: scraper_dag.scrape_anidex manual__2026-04-27T09:18:50.545284+00:00 [running]> on host 7a8516cd5613
+[2026-04-27T09:18:52.182+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='scraper_dag' AIRFLOW_CTX_TASK_ID='scrape_anidex' AIRFLOW_CTX_EXECUTION_DATE='2026-04-27T09:18:50.545284+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-27T09:18:50.545284+00:00'
+[2026-04-27T09:18:52.340+0000] {scraper.py:282} INFO - Début du scraping — 4 pages de catalogue à parcourir
+[2026-04-27T09:18:52.465+0000] {scraper.py:220} INFO - Page 1 : 30 animes extraits
+[2026-04-27T09:18:52.621+0000] {scraper.py:220} INFO - Page 2 : 30 animes extraits
+[2026-04-27T09:18:52.752+0000] {scraper.py:220} INFO - Page 3 : 30 animes extraits
+[2026-04-27T09:18:52.873+0000] {scraper.py:220} INFO - Page 4 : 13 animes extraits
+[2026-04-27T09:18:52.874+0000] {scraper.py:289} INFO - Enrichissement via les pages détail (103 animes)...
+[2026-04-27T09:18:54.595+0000] {scraper.py:293} INFO -   Enrichis : 20/103
+[2026-04-27T09:18:56.255+0000] {scraper.py:293} INFO -   Enrichis : 40/103
+[2026-04-27T09:18:57.904+0000] {scraper.py:293} INFO -   Enrichis : 60/103
+[2026-04-27T09:18:59.558+0000] {scraper.py:293} INFO -   Enrichis : 80/103
+[2026-04-27T09:19:01.168+0000] {scraper.py:293} INFO -   Enrichis : 100/103
+[2026-04-27T09:19:01.480+0000] {scraper.py:274} INFO - 8 actualités récupérées
+[2026-04-27T09:19:01.495+0000] {scraper.py:343} INFO - Scraping terminé : 103 animes, 8 news → /opt/airflow/data/raw/anime_20260427_091901.json
+[2026-04-27T09:19:01.496+0000] {python.py:201} INFO - Done. Returned value was: /opt/***/data/raw/anime_20260427_091901.json
+[2026-04-27T09:19:01.554+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=scraper_dag, task_id=scrape_anidex, execution_date=20260427T091850, start_date=20260427T091851, end_date=20260427T091901
+[2026-04-27T09:19:01.601+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-27T09:19:01.643+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

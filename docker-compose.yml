@@ -1,6 +1,6 @@
 # ============================================
-# 🎌 AniData Lab - Docker Compose
-# Stack: Elasticsearch + Logstash + Grafana + Airflow
+# AniData Lab - Docker Compose
+# Stack: Elasticsearch + Logstash + Grafana + Airflow + Mock-site
 # Optimisé pour machines 8 GB RAM
 # ============================================
 
@@ -37,7 +37,7 @@ services:
       - anidata-network
 
   # ==========================================
-  # GRAFANA (remplace Kibana - 4x plus léger)
+  # GRAFANA
   # ==========================================
   grafana:
     image: grafana/grafana-oss:10.3.1
@@ -78,6 +78,22 @@ services:
     depends_on:
       elasticsearch:
         condition: service_healthy
+    networks:
+      - anidata-network
+
+  # ==========================================
+  # MOCK-SITE (nginx - cible du scraper)
+  # Accessible depuis les DAGs via http://mock-site
+  # Accessible depuis le navigateur via http://localhost:8088
+  # ==========================================
+  mock-site:
+    image: nginx:alpine
+    container_name: anidata-mock-site
+    volumes:
+      - ./mock-site/site:/usr/share/nginx/html:ro
+    ports:
+      - "8088:80"
+    restart: unless-stopped
     networks:
       - anidata-network
 
@@ -125,7 +141,7 @@ services:
           --conn-host 'elasticsearch' \
           --conn-port '9200' \
           --conn-schema 'http' || true
-        echo "✅ Airflow initialisé avec succès !"
+        echo "Airflow initialisé avec succès !"
     environment:
       - AIRFLOW__CORE__EXECUTOR=${AIRFLOW__CORE__EXECUTOR}
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=${AIRFLOW__DATABASE__SQL_ALCHEMY_CONN}
@@ -157,7 +173,7 @@ services:
       - AIRFLOW__WEBSERVER__SECRET_KEY=${AIRFLOW__WEBSERVER__SECRET_KEY}
       - AIRFLOW__WEBSERVER__EXPOSE_CONFIG=${AIRFLOW__WEBSERVER__EXPOSE_CONFIG}
       - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=${AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION}
-      - _PIP_ADDITIONAL_REQUIREMENTS=pandas elasticsearch apache-airflow-providers-elasticsearch
+      - _PIP_ADDITIONAL_REQUIREMENTS=pandas pyarrow elasticsearch apache-airflow-providers-elasticsearch beautifulsoup4 requests
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
@@ -194,7 +210,7 @@ services:
       - AIRFLOW__CORE__FERNET_KEY=${AIRFLOW__CORE__FERNET_KEY}
       - AIRFLOW__CORE__LOAD_EXAMPLES=${AIRFLOW__CORE__LOAD_EXAMPLES}
       - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=${AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION}
-      - _PIP_ADDITIONAL_REQUIREMENTS=pandas elasticsearch apache-airflow-providers-elasticsearch
+      - _PIP_ADDITIONAL_REQUIREMENTS=pandas pyarrow elasticsearch apache-airflow-providers-elasticsearch beautifulsoup4 requests
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./airflow/logs:/opt/airflow/logs
