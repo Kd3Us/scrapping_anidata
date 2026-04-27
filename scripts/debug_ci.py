@@ -26,16 +26,16 @@ if not token or not repo:
 r = requests.get(
     f"https://api.github.com/repos/{repo}/actions/runs",
     headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"},
-    params={"branch": "master", "per_page": 5},
+    params={"per_page": 8},
     timeout=15,
 )
 r.raise_for_status()
 
 runs = r.json().get("workflow_runs", [])
-print(f"{'ID':<12} {'Conclusion':<12} {'SHA':<8} {'Date':<22} Nom")
-print("-" * 75)
+print(f"{'ID':<12} {'Conclusion':<12} {'SHA':<8} {'Branch':<12} {'Date':<22} Nom")
+print("-" * 90)
 for run in runs:
     print(
         f"{run['id']:<12} {str(run['conclusion']):<12} {run['head_sha'][:7]:<8}"
-        f" {run['created_at']:<22} {run['name']}"
+        f" {run['head_branch']:<12} {run['created_at']:<22} {run['name']}"
     )
