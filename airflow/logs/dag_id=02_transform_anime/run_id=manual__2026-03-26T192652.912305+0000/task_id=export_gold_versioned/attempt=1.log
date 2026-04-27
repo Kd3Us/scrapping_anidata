@@ -1,0 +1,14 @@
+[2026-03-26T19:27:36.275+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 02_transform_anime.export_gold_versioned manual__2026-03-26T19:26:52.912305+00:00 [queued]>
+[2026-03-26T19:27:36.294+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 02_transform_anime.export_gold_versioned manual__2026-03-26T19:26:52.912305+00:00 [queued]>
+[2026-03-26T19:27:36.296+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2026-03-26T19:27:36.319+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): export_gold_versioned> on 2026-03-26 19:26:52.912305+00:00
+[2026-03-26T19:27:36.329+0000] {standard_task_runner.py:60} INFO - Started process 553 to run task
+[2026-03-26T19:27:36.333+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '02_transform_anime', 'export_gold_versioned', 'manual__2026-03-26T19:26:52.912305+00:00', '--job-id', '272', '--raw', '--subdir', 'DAGS_FOLDER/02_transform_anime.py', '--cfg-path', '/tmp/tmp7xmy7j0x']
+[2026-03-26T19:27:36.338+0000] {standard_task_runner.py:88} INFO - Job 272: Subtask export_gold_versioned
+[2026-03-26T19:27:36.458+0000] {task_command.py:423} INFO - Running <TaskInstance: 02_transform_anime.export_gold_versioned manual__2026-03-26T19:26:52.912305+00:00 [running]> on host d05980edad3f
+[2026-03-26T19:27:36.638+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='02_transform_anime' AIRFLOW_CTX_TASK_ID='export_gold_versioned' AIRFLOW_CTX_EXECUTION_DATE='2026-03-26T19:26:52.912305+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-26T19:26:52.912305+00:00'
+[2026-03-26T19:27:38.794+0000] {logging_mixin.py:188} INFO - Export gold v3 : 17562 lignes
+[2026-03-26T19:27:38.825+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-03-26T19:27:38.847+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=02_transform_anime, task_id=export_gold_versioned, execution_date=20260326T192652, start_date=20260326T192736, end_date=20260326T192738
+[2026-03-26T19:27:38.893+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-26T19:27:38.930+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,19 @@
+[2026-03-24T08:37:26.054+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: 04_anomaly_detector.detect_review_bombing manual__2026-03-24T08:37:24.965620+00:00 [queued]>
+[2026-03-24T08:37:26.068+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: 04_anomaly_detector.detect_review_bombing manual__2026-03-24T08:37:24.965620+00:00 [queued]>
+[2026-03-24T08:37:26.069+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-03-24T08:37:26.090+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): detect_review_bombing> on 2026-03-24 08:37:24.965620+00:00
+[2026-03-24T08:37:26.100+0000] {standard_task_runner.py:60} INFO - Started process 727 to run task
+[2026-03-24T08:37:26.104+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', '04_anomaly_detector', 'detect_review_bombing', 'manual__2026-03-24T08:37:24.965620+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/04_anomaly_detector.py', '--cfg-path', '/tmp/tmpmudz53o3']
+[2026-03-24T08:37:26.108+0000] {standard_task_runner.py:88} INFO - Job 68: Subtask detect_review_bombing
+[2026-03-24T08:37:26.229+0000] {task_command.py:423} INFO - Running <TaskInstance: 04_anomaly_detector.detect_review_bombing manual__2026-03-24T08:37:24.965620+00:00 [running]> on host 67583f3fa599
+[2026-03-24T08:37:26.446+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='anidata-lab' AIRFLOW_CTX_DAG_ID='04_anomaly_detector' AIRFLOW_CTX_TASK_ID='detect_review_bombing' AIRFLOW_CTX_EXECUTION_DATE='2026-03-24T08:37:24.965620+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-03-24T08:37:24.965620+00:00'
+[2026-03-24T08:37:27.042+0000] {logging_mixin.py:188} INFO - Animes potentiellement review-bombés : 763
+[2026-03-24T08:37:27.043+0000] {logging_mixin.py:188} INFO -   Ex-Arm (score1_ratio=75.31%)
+[2026-03-24T08:37:27.045+0000] {logging_mixin.py:188} INFO -   Tsui no Sora (score1_ratio=71.23%)
+[2026-03-24T08:37:27.045+0000] {logging_mixin.py:188} INFO -   Utsu Musume Sayuri (score1_ratio=70.26%)
+[2026-03-24T08:37:27.046+0000] {logging_mixin.py:188} INFO -   Tenkuu Danzai Skelter+Heaven (score1_ratio=69.73%)
+[2026-03-24T08:37:27.047+0000] {logging_mixin.py:188} INFO -   Nami (score1_ratio=65.95%)
+[2026-03-24T08:37:27.047+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-03-24T08:37:27.073+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=04_anomaly_detector, task_id=detect_review_bombing, execution_date=20260324T083724, start_date=20260324T083726, end_date=20260324T083727
+[2026-03-24T08:37:27.122+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-03-24T08:37:27.175+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
