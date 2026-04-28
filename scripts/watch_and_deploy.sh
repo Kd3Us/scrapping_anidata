@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd "$(dirname "$0")/.."
+
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1"
 }
