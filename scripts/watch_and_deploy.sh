@@ -29,6 +29,19 @@ while true; do
         docker compose pull
         docker compose up -d
 
+        log "En attente du démarrage d'Airflow..."
+        until wget --quiet --output-document=- http://localhost:8080/health 2>/dev/null | grep -q "healthy"; do
+            sleep 10
+        done
+        log "Airflow prêt — activation et déclenchement des DAGs"
+
+        for dag in 00_hello_anidata 01_extract_anime 02_transform_anime 03_load_anime 04_anomaly_detector 05_full_pipeline scraper_dag etl_dag; do
+            docker compose exec -T airflow-webserver airflow dags unpause "$dag"
+        done
+
+        docker compose exec -T airflow-webserver airflow dags trigger scraper_dag
+        docker compose exec -T airflow-webserver airflow dags trigger 05_full_pipeline
+
         LAST_SHA="$SHA"
     fi
 
