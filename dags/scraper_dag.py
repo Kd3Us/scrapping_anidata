@@ -23,7 +23,7 @@ with DAG(
         python_callable=scrape_to_file,
         op_kwargs={
             "output_dir": "/opt/airflow/data/raw",
-            "base_url": "http://mock-site",
+            "base_url": "http://localhost:8088",
             "enrich": True,
         },
     )

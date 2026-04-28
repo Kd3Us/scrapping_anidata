@@ -1,5 +1,10 @@
+import glob
+import json
 import os
 import pandas as pd
+
+# Offset pour éviter les collisions avec les vrais MAL_ID (max ~56k)
+SCRAPER_MAL_ID_OFFSET = 900_000
 
 
 CSV_SOURCE = "/opt/airflow/data/raw"
@@ -46,6 +51,93 @@ def extract_csv(dataset_key):
         "rows": len(df),
         "columns": list(df.columns),
     }
+
+
+def extract_scraper_json():
+    """Enrichit raw_anime et raw_synopsis avec le dernier JSON scrappé."""
+    files = sorted(glob.glob(os.path.join(CSV_SOURCE, "anime_*.json")))
+    if not files:
+        print("Aucun fichier JSON scrappé trouvé, skip.")
+        return {"source": None, "rows_added": 0, "synopsis_updated": 0}
+
+    latest_json = files[-1]
+    with open(latest_json, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    scraper_animes = data.get("animes", [])
+    if not scraper_animes:
+        return {"source": latest_json, "rows_added": 0, "synopsis_updated": 0}
+
+    # --- Enrich raw_anime.parquet ---
+    anime_path = os.path.join(REP_SOURCE, "raw_anime.parquet")
+    df_anime = pd.read_parquet(anime_path)
+    existing_names = set(df_anime["Name"].str.lower().str.strip())
+
+    def to_anime_row(a):
+        return {
+            "MAL_ID": SCRAPER_MAL_ID_OFFSET + a["id"],
+            "Name": a.get("title_en", ""),
+            "Score": a.get("score"),
+            "Genres": ", ".join(a["genres"]) if a.get("genres") else None,
+            "Type": a.get("type"),
+            "Episodes": a.get("episodes"),
+            "Studios": a.get("studio"),
+            "Source": None,
+            "Members": None,
+            "Favorites": None,
+            "Watching": None,
+            "Completed": None,
+            "On-Hold": None,
+            "Dropped": None,
+            "Plan to Watch": None,
+        }
+
+    df_scraped = pd.DataFrame([to_anime_row(a) for a in scraper_animes])
+    df_new_anime = df_scraped[
+        ~df_scraped["Name"].str.lower().str.strip().isin(existing_names)
+    ]
+
+    rows_added = 0
+    if not df_new_anime.empty:
+        pd.concat([df_anime, df_new_anime], ignore_index=True).to_parquet(anime_path, index=False)
+        rows_added = len(df_new_anime)
+        print(f"{rows_added} nouveaux animes ajoutés depuis le scraper.")
+
+    # --- Enrich raw_synopsis.parquet ---
+    synopsis_path = os.path.join(REP_SOURCE, "raw_synopsis.parquet")
+    df_syn = pd.read_parquet(synopsis_path)
+    existing_mal_syn = set(df_syn["MAL_ID"])
+
+    # Reconstruction du mapping name→MAL_ID après enrichissement anime
+    df_anime_updated = pd.read_parquet(anime_path)
+    name_to_mal = dict(zip(
+        df_anime_updated["Name"].str.lower().str.strip(),
+        df_anime_updated["MAL_ID"],
+    ))
+
+    def to_synopsis_row(a):
+        name = a.get("title_en", "")
+        mal_id = name_to_mal.get(name.lower().strip(), SCRAPER_MAL_ID_OFFSET + a["id"])
+        return {
+            "MAL_ID": mal_id,
+            "Name": name,
+            "Score": a.get("score"),
+            "Genres": ", ".join(a["genres"]) if a.get("genres") else None,
+            "sypnopsis": a.get("synopsis"),
+        }
+
+    df_syn_scraped = pd.DataFrame([
+        to_synopsis_row(a) for a in scraper_animes if a.get("synopsis")
+    ])
+    df_new_syn = df_syn_scraped[~df_syn_scraped["MAL_ID"].isin(existing_mal_syn)]
+
+    synopsis_updated = 0
+    if not df_new_syn.empty:
+        pd.concat([df_syn, df_new_syn], ignore_index=True).to_parquet(synopsis_path, index=False)
+        synopsis_updated = len(df_new_syn)
+        print(f"{synopsis_updated} synopsis ajoutés depuis le scraper.")
+
+    return {"source": latest_json, "rows_added": rows_added, "synopsis_updated": synopsis_updated}
 
 
 # Vérifie que les colonnes obligatoires sont présentes

@@ -207,6 +207,6 @@ def export_gold(versioned=False):
     for link, target in [(latest_csv, csv_path), (latest_json, json_path)]:
         if os.path.exists(link):
             os.remove(link)
-        shutil.copy2(target, link)
+        shutil.copyfile(target, link)
 
     return {"version": v, "csv": csv_path, "json": json_path, "rows": len(df)}

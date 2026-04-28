@@ -155,7 +155,7 @@ services:
       - ./data:/opt/airflow/data
     ports:
       - "8080:8080"
-    mem_limit: 6G
+    mem_limit: 512m
     depends_on:
       airflow-init:
         condition: service_completed_successfully
@@ -185,7 +185,7 @@ services:
       - ./airflow/plugins:/opt/airflow/plugins
       - ./airflow/scripts:/opt/airflow/scripts
       - ./data:/opt/airflow/data
-    mem_limit: 12G
+    mem_limit: 3g
     depends_on:
       airflow-init:
         condition: service_completed_successfully

@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-from extract import extract_csv, validate_schema
+from extract import extract_csv, validate_schema, extract_scraper_json
 
 
 default_args = {
@@ -36,6 +36,15 @@ def _extract_synopsis(**context):
     result = extract_csv("synopsis")
     context["ti"].xcom_push(key="extract_synopsis", value=result)
     print(f"anime_with_synopsis.csv : {result['rows']} lignes")
+
+
+def _enrich_from_scraper(**context):
+    result = extract_scraper_json()
+    if result["source"]:
+        print(f"Scraper JSON : {result['source']}")
+        print(f"  → {result['rows_added']} animes ajoutés, {result['synopsis_updated']} synopsis ajoutés")
+    else:
+        print("Aucun fichier scraper trouvé, enrichissement ignoré.")
 
 
 def _validate_all(**context):
@@ -80,4 +89,9 @@ with DAG(
         python_callable=_validate_all,
     )
 
-    [extract_anime, extract_ratings, extract_synopsis] >> validate
+    enrich_scraper = PythonOperator(
+        task_id="enrich_from_scraper",
+        python_callable=_enrich_from_scraper,
+    )
+
+    [extract_anime, extract_ratings, extract_synopsis] >> validate >> enrich_scraper
