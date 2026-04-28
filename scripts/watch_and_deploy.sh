@@ -23,8 +23,9 @@ while true; do
     if [ "$CONCLUSION" = "success" ] && [ -n "$SHA" ] && [ "$SHA" != "$LAST_SHA" ]; then
         log "Nouveau déploiement détecté (sha: ${SHA})"
 
+        docker compose down -v
         docker compose pull
-        docker compose up -d --no-deps airflow-webserver airflow-scheduler
+        docker compose up -d
 
         LAST_SHA="$SHA"
     fi
