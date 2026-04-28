@@ -96,54 +96,13 @@ Schedule : `None` (declenche uniquement par `scraper_dag`).
 
 ---
 
-## Deploiement automatique CD
+## Deploiement
 
-Le script `scripts/check_and_deploy.sh` est un agent CD local qui tourne en cron. Toutes les 5 minutes il interroge l'API GitHub, compare le SHA du dernier run reussi avec le SHA deja deploye, et effectue un `docker compose pull` + `up` uniquement si une nouvelle image est disponible.
-
-### Generer un Personal Access Token GitHub
-
-1. Aller sur https://github.com/settings/tokens/new
-2. Nom : `anidata-cd-local`
-3. Scopes requis : `read:packages`, `workflow`
-4. Copier le token genere
+Apres un merge sur `master` et une CI verte, l'image est publiee automatiquement sur GHCR. Pour mettre a jour un environnement existant :
 
 ```bash
-# Ajouter dans .env
-GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
-```
-
-### Installer la tache planifiee (Windows)
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts\setup_task.ps1
-```
-
-La tache `AniData-CD` s'execute toutes les 5 minutes via le Planificateur de taches Windows.
-
-### Tester manuellement sans attendre la tache
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts\check_and_deploy.ps1
-```
-
-### Voir les logs en temps reel
-
-```powershell
-Get-Content "$env:TEMP\anidata_deploy.log" -Wait -Tail 20
-```
-
-Exemples de sortie :
-```
-[2026-04-27 14:30:01] Deja a jour, rien a faire
-[2026-04-27 14:35:01] Nouvelle image detectee (SHA: a1b2c3d) - deploiement en cours...
-[2026-04-27 14:35:45] Deploiement OK - SHA: a1b2c3d
-[2026-04-27 14:40:01] CI pas verte (failure), pas de deploiement
-```
-
-### Desinstaller la tache
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts\remove_task.ps1
+docker compose pull
+docker compose up -d
 ```
 
 ---
