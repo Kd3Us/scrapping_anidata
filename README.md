@@ -1,6 +1,6 @@
 # AniData Lab
 
-Pipeline de scraping, transformation et visualisation de données anime, déployé via CI/CD GitHub Actions sur une stack Docker Airflow + Elasticsearch + Grafana.
+Pipeline de scraping, transformation, visualisation de données anime, déployé via CI/CD GitHub Actions sur une stack Docker Airflow + Elasticsearch + Grafana.
 
 ---
 
