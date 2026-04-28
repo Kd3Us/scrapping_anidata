@@ -95,7 +95,17 @@ def extract_scraper_json():
     df_scraped = pd.DataFrame([to_anime_row(a) for a in scraper_animes])
     df_new_anime = df_scraped[
         ~df_scraped["Name"].str.lower().str.strip().isin(existing_names)
-    ]
+    ].copy()
+
+    for col in df_anime.columns:
+        if col not in df_new_anime.columns:
+            continue
+        if df_anime[col].dtype == object:
+            df_new_anime[col] = df_new_anime[col].apply(
+                lambda x: str(x) if x is not None else None
+            )
+        else:
+            df_new_anime[col] = pd.to_numeric(df_new_anime[col], errors="coerce").astype(df_anime[col].dtype)
 
     rows_added = 0
     if not df_new_anime.empty:
@@ -129,7 +139,17 @@ def extract_scraper_json():
     df_syn_scraped = pd.DataFrame([
         to_synopsis_row(a) for a in scraper_animes if a.get("synopsis")
     ])
-    df_new_syn = df_syn_scraped[~df_syn_scraped["MAL_ID"].isin(existing_mal_syn)]
+    df_new_syn = df_syn_scraped[~df_syn_scraped["MAL_ID"].isin(existing_mal_syn)].copy()
+
+    for col in df_syn.columns:
+        if col not in df_new_syn.columns:
+            continue
+        if df_syn[col].dtype == object:
+            df_new_syn[col] = df_new_syn[col].apply(
+                lambda x: str(x) if x is not None else None
+            )
+        else:
+            df_new_syn[col] = pd.to_numeric(df_new_syn[col], errors="coerce").astype(df_syn[col].dtype)
 
     synopsis_updated = 0
     if not df_new_syn.empty:
